@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#FAF7F1;color:#1A1613;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:#E04E2A;color:#FAF7F1}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(250,247,241,0.82);backdrop-filter:blur(12px);border-bottom:1px solid #E5DFD4">
+    <div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="index.dc.html" style="display:flex;align-items:baseline;gap:8px">
+        <span style="font-weight:800;font-size:20px;letter-spacing:-0.02em;white-space:nowrap">Ally Cui</span>
+        <span style="width:7px;height:7px;border-radius:50%;background:#E04E2A;display:inline-block;transform:translateY(-1px)"></span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:clamp(14px,2.6vw,34px);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;flex-wrap:wrap">
+        <a href="index.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Home</a>
+        <a href="work.dc.html" style="color:#1A1613;border-bottom:1.5px solid #E04E2A;padding-bottom:2px">Work</a>
+        <a href="about.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">About</a>
+        <a href="contact.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex:1">
+
+    <!-- BREADCRUMB -->
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(24px,3vw,40px) clamp(20px,5vw,48px) 0;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286">
+      <a href="work.dc.html" style-hover="color:#E04E2A">Work</a> &nbsp;/&nbsp; <span style="color:#1A1613">STYLIST</span>
+    </div>
+
+    <!-- 1. PROJECT HERO -->
+    <section style="max-width:1280px;margin:0 auto;padding:clamp(24px,3vw,40px) clamp(20px,5vw,48px) clamp(40px,5vw,64px)">
+      <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">Mobile UX Design · React Native</span>
+      <h1 style="font-weight:800;font-size:clamp(54px,12vw,160px);line-height:0.9;letter-spacing:-0.035em;margin-top:18px">STYLIST</h1>
+      <p style="margin-top:24px;font-family:'Newsreader',serif;font-weight:300;font-size:clamp(21px,2.6vw,34px);line-height:1.36;max-width:40ch">A mobile outfit-planning app that helps users make daily clothing decisions using wardrobe data, weather conditions, formality preferences, and personal style tags.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#E5DFD4;border:1px solid #E5DFD4;margin-top:clamp(32px,4vw,48px)">
+        <div style="background:#FAF7F1;padding:20px 22px"><div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;margin-bottom:8px">Role</div><div style="font-weight:600;font-size:15px">UI/UX · Frontend · Interface Refinement</div></div>
+        <div style="background:#FAF7F1;padding:20px 22px"><div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;margin-bottom:8px">Year</div><div style="font-weight:600;font-size:15px">Spring 2026</div></div>
+        <div style="background:#FAF7F1;padding:20px 22px"><div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;margin-bottom:8px">Course</div><div style="font-weight:600;font-size:15px">IAT 359: Mobile Computing</div></div>
+        <div style="background:#FAF7F1;padding:20px 22px"><div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;margin-bottom:8px">Tools</div><div style="font-weight:600;font-size:15px">React Native · Expo · Firebase · AsyncStorage · Weather APIs</div></div>
+      </div>
+
+      <figure style="margin-top:clamp(24px,3vw,40px)">
+        <a href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)" style="display:block;position:relative;aspect-ratio:16/9;background:#1A1613;background-image:url('https://img.youtube.com/vi/gbyDAjrPlco/maxresdefault.jpg');background-size:cover;background-position:center;border:1px solid #E5DFD4;border-radius:4px;overflow:hidden" style-hover="border-color:#E04E2A">
+          <span style="position:absolute;inset:0;background:rgba(26,22,19,0.34)"></span>
+          <span style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px">
+            <span style="width:84px;height:84px;border-radius:50%;background:#E04E2A;display:flex;align-items:center;justify-content:center;color:#FAF7F1;font-size:30px;padding-left:6px;box-shadow:0 6px 24px rgba(26,22,19,0.4)">▶</span>
+          </span>
+          <span style="position:absolute;top:16px;left:18px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:rgba(26,22,19,0.55);backdrop-filter:blur(4px);border:1px solid rgba(250,247,241,0.3);padding:6px 11px;border-radius:2px">▶ &nbsp;YouTube Walkthrough</span>
+        </a>
+        <figcaption style="margin-top:14px;font-size:14px;color:#9B9286;font-style:italic;font-family:'Newsreader',serif">A short walkthrough of STYLIST&rsquo;s wardrobe, preferences, and outfit-generation flow.</figcaption>
+      </figure>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:26px">
+        <a href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)" style="display:inline-flex;align-items:center;gap:10px;background:#E04E2A;color:#FAF7F1;font-weight:600;font-size:15px;padding:15px 26px;border-radius:2px" style-hover="background:#1A1613">Watch Product Walkthrough <span style="font-family:'Space Mono',monospace">↗</span></a>
+      </div>
+    </section>
+
+    <!-- 2. PROJECT CONTEXT -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+        <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">01 — Context</span></div>
+        <div style="grid-column:span 8;min-width:280px">
+          <h2 style="font-weight:700;font-size:clamp(26px,3.2vw,40px);letter-spacing:-0.02em;line-height:1.1">What STYLIST is</h2>
+          <p style="margin-top:20px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">A clothing-management and outfit-recommendation app where users can add clothing items, organize a digital wardrobe, view weather information, and generate outfit suggestions.</p>
+          <p style="margin-top:18px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">STYLIST was designed to reduce the everyday mental effort of choosing an outfit. Choosing what to wear can require users to consider weather, formality, available clothing, and personal style all at once — the app combines wardrobe management, local weather information, formality preferences, and personal tags to help users make a more confident decision.</p>
+          <p style="margin-top:18px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">STYLIST was built as a team project for IAT 359: Mobile Computing.</p>
+          <div style="margin-top:28px;padding:22px 24px;border-left:2px solid #E04E2A;background:#F7E4DC;border-radius:0 3px 3px 0">
+            <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#E04E2A;margin-bottom:8px">My role</div>
+            <p style="font-size:16px;line-height:1.6;color:#1A1613">UI/UX design, frontend implementation, interface refinement, and improving visual consistency across the app — especially through the Add Item and Settings experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CHALLENGE -->
+    <section style="border-top:1px solid #E5DFD4;background:#1A1613;color:#FAF7F1">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+        <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">02 — The Challenge</span></div>
+        <div style="grid-column:span 8;min-width:280px">
+          <h2 style="font-weight:700;font-size:clamp(28px,3.6vw,46px);letter-spacing:-0.02em;line-height:1.12">How might I organize several required clothing inputs so users can add an item confidently — without feeling overwhelmed?</h2>
+          <p style="margin-top:22px;font-size:17px;line-height:1.7;color:rgba(250,247,241,0.72);max-width:60ch">The Add Item flow required users to enter several types of information at once. In the earlier interface these controls appeared together with limited hierarchy: the screen was functional, but visually dense and difficult to scan.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:26px">
+            <span style="font-size:14px;padding:9px 16px;border:1px solid rgba(250,247,241,0.3);border-radius:999px">A clothing photo</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid rgba(250,247,241,0.3);border-radius:999px">Clothing type</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid rgba(250,247,241,0.3);border-radius:999px">Warmth level</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid rgba(250,247,241,0.3);border-radius:999px">Formality level</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid rgba(250,247,241,0.3);border-radius:999px">Personal tags</span>
+          </div>
+          <p style="margin-top:24px;font-size:16px;line-height:1.7;color:rgba(250,247,241,0.72);max-width:60ch">Users needed to understand where to start, which decisions belonged together, and what to do next — without treating the screen as one long form.</p>
+          <figure style="margin-top:30px;max-width:300px">
+            <img src="images/add-before.png" alt="Early Add Item screen showing a single dense form with photo, name, type, warmth, formality, and tags stacked together" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid rgba(250,247,241,0.2);border-radius:8px">
+            <figcaption style="margin-top:12px;font-size:14px;color:rgba(250,247,241,0.5);font-style:italic;font-family:'Newsreader',serif">Early Add Item screen. Required inputs were visible, but photo capture, item details, sliders, and tags competed for attention at once.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROCESS & ITERATION -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px)">
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+          <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">03 — Process &amp; Iteration</span></div>
+          <div style="grid-column:span 8;min-width:280px">
+            <h2 style="font-weight:700;font-size:clamp(26px,3.2vw,40px);letter-spacing:-0.02em;line-height:1.1">Reframing the Add Item flow</h2>
+            <p style="margin-top:20px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">The early approach showed all essential inputs on one long screen so users could finish without navigating multiple pages. But putting everything together made the experience feel crowded, with little guidance about where to begin or how photo selection, item details, attributes, and tags related to one another.</p>
+          </div>
+        </div>
+
+        <!-- before / after -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(20px,3vw,36px);margin-top:clamp(36px,4vw,56px)">
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#9B9286;padding:5px 10px;border-radius:2px">Before</span><span style="font-size:14px;color:#5C554C">one dense screen</span></div>
+            <img src="images/add-before.png" alt="Early Add Item screen — one long form" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E5DFD4;border-radius:8px">
+          </figure>
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#E04E2A;padding:5px 10px;border-radius:2px">After</span><span style="font-size:14px;color:#5C554C">Photo + Basic Information</span></div>
+            <img src="images/add-top.png" alt="Revised Add Item — Photo and Basic Information section" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E04E2A;border-radius:8px">
+          </figure>
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#E04E2A;padding:5px 10px;border-radius:2px">After</span><span style="font-size:14px;color:#5C554C">Attributes + Tags</span></div>
+            <img src="images/add-bottom.png" alt="Revised Add Item — Attributes and Tags section with Add to Wardrobe button" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E04E2A;border-radius:8px">
+          </figure>
+        </div>
+        <p style="margin-top:16px;font-size:14px;color:#9B9286;font-style:italic;font-family:'Newsreader',serif;max-width:80ch">The revised Add Item flow separates Photo, Basic Information, Attributes, and Tags into distinct sections, reducing visual density and giving users a clearer starting point.</p>
+
+        <!-- decisions -->
+        <div style="margin-top:clamp(36px,4vw,56px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+          <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286">Design decisions</span></div>
+          <div style="grid-column:span 8;min-width:280px;display:flex;flex-direction:column;gap:2px">
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Separate the flow into meaningful sections.</strong> <span style="color:#5C554C">Photo, Basic Information, Attributes, and Tags each became their own grouping.</span></p></div>
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Use labels and card groupings.</strong> <span style="color:#5C554C">Clarify what information belongs together at a glance.</span></p></div>
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Apply deliberate spacing</strong> <span style="color:#5C554C">between decisions, and repeat control styles for sliders, buttons, text inputs, and tags.</span></p></div>
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;border-bottom:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Create a clearer progression</strong> <span style="color:#5C554C">from identifying an item to describing its properties.</span></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXTENDING THE SYSTEM — SETTINGS -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px)">
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+          <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">04 — Extending the Visual System</span></div>
+          <div style="grid-column:span 8;min-width:280px">
+            <h2 style="font-weight:700;font-size:clamp(26px,3.2vw,40px);letter-spacing:-0.02em;line-height:1.1">Carrying the system into Settings</h2>
+            <p style="margin-top:20px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">The goal was to apply the same principles of grouping, hierarchy, and consistency beyond Add Item. The earlier Settings screen placed display name, location, toggles, theme selection, save and reset controls, and logout in one long continuous form. Each control worked, but the page didn&rsquo;t clearly distinguish account information, preferences, appearance, and actions.</p>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(16px,2vw,24px);margin-top:clamp(36px,4vw,56px)">
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#9B9286;padding:5px 10px;border-radius:2px">Before</span><span style="font-size:14px;color:#5C554C">continuous form</span></div>
+            <img src="images/setting-before.png" alt="Early Settings screen — one continuous form" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E5DFD4;border-radius:8px">
+          </figure>
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#E04E2A;padding:5px 10px;border-radius:2px">After</span><span style="font-size:14px;color:#5C554C">Account + Preferences</span></div>
+            <img src="images/setting-top.png" alt="Revised Settings — Account and Preferences sections" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E04E2A;border-radius:8px">
+          </figure>
+          <figure>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:#E04E2A;padding:5px 10px;border-radius:2px">After</span><span style="font-size:14px;color:#5C554C">Appearance + Actions</span></div>
+            <img src="images/setting-bottom.png" alt="Revised Settings — Appearance and Actions sections" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E04E2A;border-radius:8px">
+          </figure>
+        </div>
+        <p style="margin-top:16px;font-size:14px;color:#9B9286;font-style:italic;font-family:'Newsreader',serif;max-width:80ch">The revised Settings experience organizes controls into Account, Preferences, Appearance, and Actions, helping users understand what each setting affects and where to find it.</p>
+
+        <div style="margin-top:clamp(36px,4vw,56px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+          <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286">Design decisions</span></div>
+          <div style="grid-column:span 8;min-width:280px;display:flex;flex-direction:column;gap:2px">
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Group controls into Account, Preferences, Appearance, and Actions</strong> <span style="color:#5C554C">using card-based sections to separate related controls.</span></p></div>
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Improve spacing and label hierarchy</strong> <span style="color:#5C554C">so the page reads in a clear order.</span></p></div>
+            <div style="padding:20px 0;border-top:1px solid #E5DFD4;border-bottom:1px solid #E5DFD4;display:flex;gap:18px"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#E04E2A;font-weight:700">→</span><p style="font-size:16px;line-height:1.6;color:#1A1613"><strong style="font-weight:700">Make inputs, toggles, buttons, and theme controls visually consistent</strong> <span style="color:#5C554C">with the rest of the app, so users can scan more quickly.</span></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. IMPLEMENTATION & SYSTEM SUPPORT -->
+    <section style="border-top:1px solid #E5DFD4;background:#1A1613;color:#FAF7F1">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+        <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">05 — Implementation &amp; System Support</span></div>
+        <div style="grid-column:span 8;min-width:280px">
+          <h2 style="font-weight:700;font-size:clamp(26px,3.2vw,40px);letter-spacing:-0.02em;line-height:1.1">Making the interface feel dependable</h2>
+          <p style="margin-top:20px;font-size:17px;line-height:1.7;color:rgba(250,247,241,0.72);max-width:62ch">Alongside the visual refinement, I implemented settings-related interactions in React Native — including persistent preferences such as temperature units, location inputs, and display settings. This helped the interface feel dependable across sessions while supporting a consistent experience across the app.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:rgba(250,247,241,0.14);margin-top:32px;border:1px solid rgba(250,247,241,0.14)">
+            <div style="background:#1A1613;padding:clamp(22px,2.4vw,30px)"><div style="font-weight:700;font-size:clamp(19px,2vw,24px)">React Native</div><div style="font-size:14px;color:rgba(250,247,241,0.6);margin-top:10px;line-height:1.5">Frontend implementation and interface refinement</div></div>
+            <div style="background:#1A1613;padding:clamp(22px,2.4vw,30px)"><div style="font-weight:700;font-size:clamp(19px,2vw,24px)">AsyncStorage</div><div style="font-size:14px;color:rgba(250,247,241,0.6);margin-top:10px;line-height:1.5">Persistent user preferences</div></div>
+            <div style="background:#1A1613;padding:clamp(22px,2.4vw,30px)"><div style="font-weight:700;font-size:clamp(19px,2vw,24px)">Firebase</div><div style="font-size:14px;color:rgba(250,247,241,0.6);margin-top:10px;line-height:1.5">Wardrobe and account-linked data</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FINAL OUTCOME -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px)">
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+          <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">06 — Final Outcome</span></div>
+          <div style="grid-column:span 8;min-width:280px">
+            <h2 style="font-weight:700;font-size:clamp(26px,3.2vw,40px);letter-spacing:-0.02em;line-height:1.1">Easier to scan, calmer to navigate, more coherent</h2>
+            <p style="margin-top:20px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">The final design made the app easier to scan and more visually coherent across major screens. Add Item became easier to begin and complete; Settings became easier to scan and understand. Repeated cards, labels, controls, spacing, and navigation patterns made the app feel like one product — better connecting wardrobe management, weather-aware recommendations, and user preferences.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(16px,2vw,24px);margin-top:clamp(32px,4vw,48px)">
+          <figure>
+            <img src="images/closet.png" alt="Final Closet screen with saved wardrobe items in a grid" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E5DFD4;border-radius:8px">
+            <figcaption style="margin-top:12px;font-size:14px;color:#9B9286;font-style:italic;font-family:'Newsreader',serif">Final Closet screen with saved wardrobe items. Repeated cards, controls, spacing, and navigation patterns create a more consistent product experience.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/outfit.png" alt="Final Outfit Generator result combining wardrobe items, dress code, and style filter" style="display:block;width:100%;aspect-ratio:1170/2532;object-fit:cover;background:#FAF7F1;border:1px solid #E5DFD4;border-radius:8px">
+            <figcaption style="margin-top:12px;font-size:14px;color:#9B9286;font-style:italic;font-family:'Newsreader',serif">Final Outfit Generator view. Wardrobe data, weather conditions, and formality preferences are combined into a focused outfit decision.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. REFLECTION & ETHOS -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,64px)">
+        <div style="grid-column:span 4;min-width:200px"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">07 — Reflection &amp; Ethos</span></div>
+        <div style="grid-column:span 8;min-width:280px">
+          <p style="font-family:'Newsreader',serif;font-weight:300;font-size:clamp(20px,2.4vw,30px);line-height:1.4;color:#1A1613">Simplicity does not come from placing every control on one screen. It comes from understanding what users need to know first, grouping related information, and making the next action feel obvious.</p>
+          <p style="margin-top:20px;font-size:17px;line-height:1.7;color:#5C554C;max-width:62ch">This project reinforced that usability often depends more on how information is grouped, sequenced, and labeled than on visual polish alone. STYLIST reflects my approach to interaction design: turning complex systems into interactions that feel easier to understand, navigate, and enjoy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. RELATED NAV -->
+    <section style="border-top:1px solid #E5DFD4;background:#1A1613;color:#FAF7F1">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(36px,4vw,56px) clamp(20px,5vw,48px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+        <a href="work.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(250,247,241,0.7)" style-hover="color:#E04E2A"><span>←</span> View All Work</a>
+        <a href="export-to-reality.dc.html" style="text-align:right" style-hover="color:#E04E2A">
+          <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(250,247,241,0.45)">Next project →</div>
+          <div style="font-weight:700;font-size:clamp(22px,3vw,34px);letter-spacing:-0.02em;margin-top:6px">Export to Reality</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:#1A1613;color:#FAF7F1;border-top:1px solid rgba(250,247,241,0.12)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,48px) 36px;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,48px)">
+      <div style="grid-column:span 5;min-width:240px">
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-weight:800;font-size:clamp(28px,4vw,44px);letter-spacing:-0.02em">Ally Cui</span><span style="width:9px;height:9px;border-radius:50%;background:#E04E2A;display:inline-block"></span></div>
+        <p style="margin-top:16px;font-size:15px;line-height:1.6;color:rgba(250,247,241,0.6);max-width:34ch">UI/UX &amp; Interaction Designer. Currently open to new opportunities.</p>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Sitemap</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="index.dc.html" style-hover="color:#E04E2A">Home</a>
+          <a href="work.dc.html" style-hover="color:#E04E2A">Work</a>
+          <a href="about.dc.html" style-hover="color:#E04E2A">About</a>
+          <a href="contact.dc.html" style-hover="color:#E04E2A">Contact</a>
+        </div>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Elsewhere</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="#" style-hover="color:#E04E2A">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ally-cui-9ab570364/" target="_blank" rel="noopener" style-hover="color:#E04E2A">LinkedIn ↗</a>
+          <a href="mailto:ally.cui@example.com" style-hover="color:#E04E2A">Email ↗</a>
+        </div>
+      </div>
+      <div style="grid-column:span 3;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Meta</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="style-guide.dc.html" style-hover="color:#E04E2A">Style Guide</a>
+          <a href="citations.dc.html" style-hover="color:#E04E2A">Citations</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,48px) 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(250,247,241,0.4)">
+      <span>© 2025 Ally Cui</span>
+      <span>Designed &amp; built by Ally Cui</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

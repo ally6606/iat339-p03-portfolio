@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#FAF7F1">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#FAF7F1"/>
+    <text x="360" y="380" font-family="Archivo, sans-serif" font-weight="800" font-size="150" letter-spacing="-5" fill="#1A1613">Let’s</text>
+    <text x="360" y="520" font-family="Archivo, sans-serif" font-weight="800" font-size="150" letter-spacing="-5" fill="#1A1613">connect.</text>
+    <circle cx="840" cy="300" r="34" fill="#E04E2A"/>
+  </svg>
+</template>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#FAF7F1;color:#1A1613;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:#E04E2A;color:#FAF7F1}
+  input,textarea{font-family:inherit}
+  input:focus,textarea:focus{outline:2px solid #E04E2A;outline-offset:2px;border-color:#E04E2A}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(250,247,241,0.82);backdrop-filter:blur(12px);border-bottom:1px solid #E5DFD4">
+    <div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="index.dc.html" style="display:flex;align-items:baseline;gap:8px">
+        <span style="font-weight:800;font-size:20px;letter-spacing:-0.02em;white-space:nowrap">Ally Cui</span>
+        <span style="width:7px;height:7px;border-radius:50%;background:#E04E2A;display:inline-block;transform:translateY(-1px)"></span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:clamp(14px,2.6vw,34px);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;flex-wrap:wrap">
+        <a href="index.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Home</a>
+        <a href="work.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Work</a>
+        <a href="about.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">About</a>
+        <a href="contact.dc.html" style="color:#1A1613;border-bottom:1.5px solid #E04E2A;padding-bottom:2px">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex:1">
+
+    <section style="max-width:1280px;margin:0 auto;padding:clamp(40px,6vw,96px) clamp(20px,5vw,48px) clamp(48px,7vw,96px)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#5C554C;border-bottom:1px solid #E5DFD4;padding-bottom:18px">
+        <span>✦ &nbsp;Contact</span>
+        <span style="color:#9B9286">Vancouver, BC · open to work</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(32px,5vw,72px);margin-top:clamp(32px,4vw,56px)">
+
+        <!-- invite + direct links -->
+        <div style="grid-column:span 12;max-width:760px">
+          <h1 style="font-weight:800;font-size:clamp(48px,8vw,104px);line-height:0.94;letter-spacing:-0.035em">Let&rsquo;s<br>connect.</h1>
+          <p style="margin-top:26px;font-family:'Newsreader',serif;font-weight:300;font-size:clamp(20px,2.3vw,29px);line-height:1.4;max-width:30ch">Hiring, collaborating, or just want to talk through a tricky interaction? I&rsquo;d love to hear from you.</p>
+
+          <div style="margin-top:clamp(36px,4vw,52px);display:flex;flex-direction:column">
+            <a href="mailto:ally.cui@example.com" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;border-top:1px solid #E5DFD4" style-hover="color:#E04E2A">
+              <span><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;display:block;margin-bottom:7px">Email</span><span style="font-weight:600;font-size:clamp(18px,2vw,22px)">ally.cui@example.com</span></span>
+              <span style="font-family:'Space Mono',monospace;font-size:18px;color:#E04E2A">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ally-cui-9ab570364/" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;border-top:1px solid #E5DFD4" style-hover="color:#E04E2A">
+              <span><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;display:block;margin-bottom:7px">LinkedIn</span><span style="font-weight:600;font-size:clamp(18px,2vw,22px)">in/ally-cui</span></span>
+              <span style="font-family:'Space Mono',monospace;font-size:18px;color:#E04E2A">↗</span>
+            </a>
+            <a href="#" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;border-top:1px solid #E5DFD4;border-bottom:1px solid #E5DFD4" style-hover="color:#E04E2A">
+              <span><span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9B9286;display:block;margin-bottom:7px">GitHub</span><span style="font-weight:600;font-size:clamp(18px,2vw,22px)">github.com/allycui</span></span>
+              <span style="font-family:'Space Mono',monospace;font-size:18px;color:#E04E2A">↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:#1A1613;color:#FAF7F1;border-top:1px solid rgba(250,247,241,0.12)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,48px) 36px;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,48px)">
+      <div style="grid-column:span 5;min-width:240px">
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-weight:800;font-size:clamp(28px,4vw,44px);letter-spacing:-0.02em">Ally Cui</span><span style="width:9px;height:9px;border-radius:50%;background:#E04E2A;display:inline-block"></span></div>
+        <p style="margin-top:16px;font-size:15px;line-height:1.6;color:rgba(250,247,241,0.6);max-width:34ch">UI/UX &amp; Interaction Designer. Currently open to new opportunities.</p>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Sitemap</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="index.dc.html" style-hover="color:#E04E2A">Home</a>
+          <a href="work.dc.html" style-hover="color:#E04E2A">Work</a>
+          <a href="about.dc.html" style-hover="color:#E04E2A">About</a>
+          <a href="contact.dc.html" style-hover="color:#E04E2A">Contact</a>
+        </div>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Elsewhere</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="#" style-hover="color:#E04E2A">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ally-cui-9ab570364/" target="_blank" rel="noopener" style-hover="color:#E04E2A">LinkedIn ↗</a>
+          <a href="mailto:ally.cui@example.com" style-hover="color:#E04E2A">Email ↗</a>
+        </div>
+      </div>
+      <div style="grid-column:span 3;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Meta</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="style-guide.dc.html" style-hover="color:#E04E2A">Style Guide</a>
+          <a href="citations.dc.html" style-hover="color:#E04E2A">Citations</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,48px) 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(250,247,241,0.4)">
+      <span>© 2025 Ally Cui</span>
+      <span>Designed &amp; built by Ally Cui</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false };
+  renderVals() {
+    return {
+      buttonLabel: this.state.sent ? "Thanks — I'll be in touch" : "Send message",
+      handleSubmit: (e) => {
+        e.preventDefault();
+        this.setState({ sent: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

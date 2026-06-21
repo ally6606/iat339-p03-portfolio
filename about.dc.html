@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#FAF7F1;color:#1A1613;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:#E04E2A;color:#FAF7F1}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(250,247,241,0.82);backdrop-filter:blur(12px);border-bottom:1px solid #E5DFD4">
+    <div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="index.dc.html" style="display:flex;align-items:baseline;gap:8px">
+        <span style="font-weight:800;font-size:20px;letter-spacing:-0.02em;white-space:nowrap">Ally Cui</span>
+        <span style="width:7px;height:7px;border-radius:50%;background:#E04E2A;display:inline-block;transform:translateY(-1px)"></span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:clamp(14px,2.6vw,34px);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;flex-wrap:wrap">
+        <a href="index.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Home</a>
+        <a href="work.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Work</a>
+        <a href="about.dc.html" style="color:#1A1613;border-bottom:1.5px solid #E04E2A;padding-bottom:2px">About</a>
+        <a href="contact.dc.html" style="color:#5C554C;padding-bottom:2px;border-bottom:1.5px solid transparent" style-hover="color:#1A1613;border-bottom:1.5px solid #1A1613">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex:1">
+
+    <!-- ABOUT INTRO -->
+    <section style="max-width:1280px;margin:0 auto;padding:clamp(40px,6vw,96px) clamp(20px,5vw,48px) clamp(48px,7vw,96px)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#5C554C;border-bottom:1px solid #E5DFD4;padding-bottom:18px">
+        <span>✦ &nbsp;About</span>
+        <span style="color:#9B9286">Ally Cui · Vancouver, BC</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,5vw,64px);margin-top:clamp(32px,4vw,56px);align-items:start">
+        <div style="grid-column:span 5;min-width:240px;position:sticky;top:96px">
+          <div style="position:relative;aspect-ratio:4/5;background:#0d0d0d;border:1px solid #E5DFD4;border-radius:4px;overflow:hidden">
+            <img src="images/portrait.jpg" alt="Ally Cui in profile against a dark backdrop, wearing a pale shirt with a soft projected shadow" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center">
+            <span style="position:absolute;top:16px;right:16px;font-family:'Space Mono',monospace;font-size:11px;color:#E04E2A">✦</span>
+          </div>
+        </div>
+        <div style="grid-column:span 7;min-width:280px">
+          <h1 style="font-weight:800;font-size:clamp(40px,6vw,82px);line-height:0.96;letter-spacing:-0.03em">Designer of clear, playful systems.</h1>
+          <p style="margin-top:30px;font-family:'Newsreader',serif;font-weight:300;font-size:clamp(19px,2.1vw,27px);line-height:1.42;color:#1A1613">I&rsquo;m Ally — a UI/UX and interaction designer who turns complex systems into experiences that feel easy. I work across mobile products, games, and creative technology, moving from research and sketches to working front-end prototypes. I care about the small interactions that make a product feel thoughtful, and I like designing things that are genuinely fun to use.</p>
+          <p style="margin-top:20px;font-size:16px;line-height:1.65;color:#5C554C;max-width:58ch">That ethos runs through everything here: take something confusing, understand how people actually think about it, and rebuild it so it&rsquo;s clearer, calmer, and a little more delightful.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN VALUES -->
+    <section style="border-top:1px solid #E5DFD4;background:#1A1613;color:#FAF7F1">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,5vw,48px)">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">✦ &nbsp;Design Values</span>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:rgba(250,247,241,0.14);margin-top:32px;border:1px solid rgba(250,247,241,0.14)">
+          <div style="background:#1A1613;padding:clamp(22px,2.4vw,32px)"><div style="font-family:'Space Mono',monospace;font-size:12px;color:rgba(250,247,241,0.4)">01</div><div style="font-weight:700;font-size:clamp(22px,2.4vw,30px);margin-top:14px">Thoughtful</div></div>
+          <div style="background:#1A1613;padding:clamp(22px,2.4vw,32px)"><div style="font-family:'Space Mono',monospace;font-size:12px;color:rgba(250,247,241,0.4)">02</div><div style="font-weight:700;font-size:clamp(22px,2.4vw,30px);margin-top:14px">Playful</div></div>
+          <div style="background:#1A1613;padding:clamp(22px,2.4vw,32px)"><div style="font-family:'Space Mono',monospace;font-size:12px;color:rgba(250,247,241,0.4)">03</div><div style="font-weight:700;font-size:clamp(22px,2.4vw,30px);margin-top:14px">Clear</div></div>
+          <div style="background:#1A1613;padding:clamp(22px,2.4vw,32px)"><div style="font-family:'Space Mono',monospace;font-size:12px;color:rgba(250,247,241,0.4)">04</div><div style="font-weight:700;font-size:clamp(22px,2.4vw,30px);margin-top:14px">Iterative</div></div>
+          <div style="background:#1A1613;padding:clamp(22px,2.4vw,32px)"><div style="font-family:'Space Mono',monospace;font-size:12px;color:rgba(250,247,241,0.4)">05</div><div style="font-weight:700;font-size:clamp(22px,2.4vw,30px);margin-top:14px">System-aware</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS + SKILLS -->
+    <section style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,96px) clamp(20px,5vw,48px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(36px,5vw,72px)">
+      <div style="grid-column:span 6;min-width:280px">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">✦ &nbsp;Employment Interests</span>
+        <div style="margin-top:28px;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #E5DFD4"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#9B9286">01</span><span style="font-weight:600;font-size:clamp(19px,2vw,24px)">UI/UX Design</span></div>
+          <div style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #E5DFD4"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#9B9286">02</span><span style="font-weight:600;font-size:clamp(19px,2vw,24px)">Interaction Design</span></div>
+          <div style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #E5DFD4"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#9B9286">03</span><span style="font-weight:600;font-size:clamp(19px,2vw,24px)">Product Design</span></div>
+          <div style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #E5DFD4"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#9B9286">04</span><span style="font-weight:600;font-size:clamp(19px,2vw,24px)">Game Design / Game UX</span></div>
+          <div style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #E5DFD4"><span style="font-family:'Space Mono',monospace;font-size:13px;color:#9B9286">05</span><span style="font-weight:600;font-size:clamp(19px,2vw,24px)">Creative Technology</span></div>
+        </div>
+      </div>
+      <div style="grid-column:span 6;min-width:280px">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#E04E2A">✦ &nbsp;Skills &amp; Tools</span>
+        <div style="margin-top:28px">
+          <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#9B9286;margin-bottom:14px">Design</div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px">
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #1A1613;border-radius:999px">UI/UX Design</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #1A1613;border-radius:999px">Interaction Design</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #1A1613;border-radius:999px">Game Design</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #1A1613;border-radius:999px">Visual Design</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #1A1613;border-radius:999px">Figma</span>
+          </div>
+          <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#9B9286;margin-bottom:14px">Build</div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #E5DFD4;border-radius:999px;color:#5C554C">HTML</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #E5DFD4;border-radius:999px;color:#5C554C">CSS</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #E5DFD4;border-radius:999px;color:#5C554C">JavaScript</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #E5DFD4;border-radius:999px;color:#5C554C">React Native</span>
+            <span style="font-size:14px;padding:9px 16px;border:1px solid #E5DFD4;border-radius:999px;color:#5C554C">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PROMPT -->
+    <section style="border-top:1px solid #E5DFD4">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,96px) clamp(20px,5vw,48px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px">
+        <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:300;font-size:clamp(26px,4vw,52px);line-height:1.12;letter-spacing:-0.01em;max-width:16ch">Think we&rsquo;d work well together?</p>
+        <a href="contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;background:#E04E2A;color:#FAF7F1;font-weight:600;font-size:16px;padding:17px 30px;border-radius:2px" style-hover="background:#1A1613">Let&rsquo;s connect <span style="font-family:'Space Mono',monospace">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:#1A1613;color:#FAF7F1;border-top:1px solid rgba(250,247,241,0.12)">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,48px) 36px;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(28px,4vw,48px)">
+      <div style="grid-column:span 5;min-width:240px">
+        <div style="display:flex;align-items:baseline;gap:8px"><span style="font-weight:800;font-size:clamp(28px,4vw,44px);letter-spacing:-0.02em">Ally Cui</span><span style="width:9px;height:9px;border-radius:50%;background:#E04E2A;display:inline-block"></span></div>
+        <p style="margin-top:16px;font-size:15px;line-height:1.6;color:rgba(250,247,241,0.6);max-width:34ch">UI/UX &amp; Interaction Designer. Currently open to new opportunities.</p>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Sitemap</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="index.dc.html" style-hover="color:#E04E2A">Home</a>
+          <a href="work.dc.html" style-hover="color:#E04E2A">Work</a>
+          <a href="about.dc.html" style-hover="color:#E04E2A">About</a>
+          <a href="contact.dc.html" style-hover="color:#E04E2A">Contact</a>
+        </div>
+      </div>
+      <div style="grid-column:span 2;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Elsewhere</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="#" style-hover="color:#E04E2A">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ally-cui-9ab570364/" target="_blank" rel="noopener" style-hover="color:#E04E2A">LinkedIn ↗</a>
+          <a href="mailto:ally.cui@example.com" style-hover="color:#E04E2A">Email ↗</a>
+        </div>
+      </div>
+      <div style="grid-column:span 3;min-width:120px">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,247,241,0.45);margin-bottom:16px">Meta</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:15px">
+          <a href="style-guide.dc.html" style-hover="color:#E04E2A">Style Guide</a>
+          <a href="citations.dc.html" style-hover="color:#E04E2A">Citations</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,48px) 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(250,247,241,0.4)">
+      <span>© 2025 Ally Cui</span>
+      <span>Designed &amp; built by Ally Cui</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
