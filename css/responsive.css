@@ -1,0 +1,135 @@
+@media (max-width: 900px) {
+  .site-header__inner {
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 5.0625rem;
+    right: var(--container-pad);
+    left: var(--container-pad);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border: var(--border-thin);
+    background: var(--color-paper);
+    box-shadow: 0 1rem 2rem rgba(26, 22, 19, 0.12);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav__link {
+    border-bottom: var(--border-thin);
+    padding: 1rem;
+  }
+
+  .site-nav__link:last-child {
+    border-bottom: 0;
+  }
+
+  .split-hero,
+  .project-card,
+  .two-column-copy,
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-hero__copy,
+  .split-hero__media,
+  .project-card__media,
+  .project-card__body,
+  .two-column-copy__aside,
+  .two-column-copy__main,
+  .site-footer__intro,
+  .site-footer__column,
+  .site-footer__column--wide {
+    grid-column: auto;
+    min-width: 0;
+  }
+
+  .project-card--reverse .project-card__body {
+    order: 2;
+  }
+
+  .project-card--reverse .project-card__media {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-kicker {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .home-hero__title {
+    font-size: clamp(3.5rem, 18vw, 7rem);
+  }
+
+  .metadata-row {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header__inner {
+    padding-block: 0.875rem;
+  }
+
+  .site-nav {
+    top: 4.5rem;
+  }
+
+  .home-hero {
+    padding-top: var(--space-7);
+  }
+
+  .button-row,
+  .button {
+    width: 100%;
+  }
+
+  .button {
+    min-height: 2.75rem;
+  }
+
+  .media-frame--square {
+    max-width: 100%;
+  }
+
+  .marquee__track {
+    font-size: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .marquee__track {
+    animation: none;
+  }
+}
