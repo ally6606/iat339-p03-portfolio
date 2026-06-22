@@ -107,6 +107,16 @@
     position: static;
     max-width: 24rem;
   }
+
+  .style-doc-grid,
+  .style-layout-demo,
+  .style-footer-demo .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .style-doc-grid section {
+    min-width: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -137,6 +147,16 @@
 
   .marquee__track {
     font-size: 0.75rem;
+  }
+
+  .style-swatch-grid,
+  .style-type-grid,
+  .style-map-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .style-doc-grid pre {
+    white-space: pre-wrap;
   }
 }
 

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Guide | Ally Cui</title>
+  <meta name="description" content="Live style guide for Ally Cui's portfolio, documenting the real typography, colours, layout patterns, components, accessibility behavior, and Atomic Design mapping.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/templates.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="brand" href="index.html" aria-label="Ally Cui home">
+          <span class="brand__name">Ally Cui</span>
+          <span class="brand__dot" aria-hidden="true"></span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+          <a class="site-nav__link" href="index.html">Home</a>
+          <a class="site-nav__link" href="work.html">Work</a>
+          <a class="site-nav__link" href="about.html">About</a>
+          <a class="site-nav__link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <section class="style-hero container" aria-labelledby="style-guide-title">
+        <div class="section-kicker">
+          <span>* Portfolio Utility</span>
+          <span class="soft">Live component reference</span>
+        </div>
+        <h1 class="work-hero__title" id="style-guide-title">Style Guide</h1>
+        <p class="work-hero__lead">This is the live component and visual-system reference for Ally Cui&rsquo;s portfolio. It documents the current site styles, components, and accessibility patterns as they are used in the migrated HTML pages.</p>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="ethos-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Portfolio Ethos</span>
+          <h2 class="case-heading" id="ethos-title">Designer of clear, playful systems.</h2>
+        </div>
+        <p class="case-copy">The portfolio uses clear hierarchy, editorial typography, structured grids, warm contrast, and restrained interaction to present UI/UX, mobile product, game UX, and creative technology work without turning the site into a generic template.</p>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="colours-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Foundations</span>
+          <h2 class="case-heading" id="colours-title">Colours</h2>
+        </div>
+        <div class="style-swatch-grid">
+          <article class="style-swatch style-swatch--paper"><span class="style-swatch__token">--color-paper</span><strong>#faf7f1</strong><span>Primary page background</span></article>
+          <article class="style-swatch style-swatch--ink"><span class="style-swatch__token">--color-ink</span><strong>#1a1613</strong><span>Main text and dark sections</span></article>
+          <article class="style-swatch style-swatch--accent"><span class="style-swatch__token">--color-accent</span><strong>#e04e2a</strong><span>Calls to action and focus colour</span></article>
+          <article class="style-swatch style-swatch--line"><span class="style-swatch__token">--color-line</span><strong>#e5dfd4</strong><span>Borders and dividers</span></article>
+          <article class="style-swatch style-swatch--muted"><span class="style-swatch__token">--color-muted</span><strong>#5c554c</strong><span>Secondary body text</span></article>
+          <article class="style-swatch style-swatch--soft"><span class="style-swatch__token">--color-soft</span><strong>#9b9286</strong><span>Captions and subdued labels</span></article>
+        </div>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="typography-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Foundations</span>
+          <h2 class="case-heading" id="typography-title">Typography</h2>
+        </div>
+        <div class="style-type-grid">
+          <article><span class="eyebrow">Display / Archivo</span><p class="home-section-heading">Selected projects</p><p class="case-copy">Used for page titles, section headings, cards, and strong UI hierarchy.</p></article>
+          <article><span class="eyebrow">Editorial serif / Newsreader</span><p class="home-hero__statement">Thoughtful, playful, and clear interactive experiences.</p><p class="case-copy">Used for reflective statements, hero supporting copy, and editorial emphasis.</p></article>
+          <article><span class="eyebrow">Body / Archivo</span><p class="case-copy">Body text uses Archivo with generous line height to keep project process writing readable across desktop and mobile layouts.</p></article>
+          <article><span class="eyebrow">Metadata / Space Mono</span><p class="project-card__meta"><span class="accent">01</span><span>React Native</span></p><p class="case-copy">Used for labels, metadata, active markers, and interface-like details.</p></article>
+        </div>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="layout-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Foundations</span>
+          <h2 class="case-heading" id="layout-title">Layout and Spacing</h2>
+        </div>
+        <p class="case-copy">The live site uses `.container` with `--container-max` and `--container-pad`, twelve-column CSS Grid for hero and case-study structures, Flexbox for navigation, buttons, metadata rows, and footer link stacks, and real media queries at 900px, 768px, and 480px to collapse grids and expose the mobile navigation toggle.</p>
+        <div class="style-layout-demo">
+          <div>12-column grid</div>
+          <div>Responsive container</div>
+          <div>Flex rows</div>
+        </div>
+      </section>
+
+      <section class="style-components container" aria-labelledby="components-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Components</span>
+          <h2 class="case-heading" id="components-title">Documented Components</h2>
+        </div>
+
+        <article class="style-component" id="component-headings">
+          <h3 class="style-component__title">Headings</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.home-section-heading, .case-heading, .work-hero__title</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;h2 class="home-section-heading" id="selected-projects"&gt;Selected projects&lt;/h2&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><h2 class="home-section-heading">Selected projects</h2></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-body-text">
+          <h3 class="style-component__title">Body and Editorial Text</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.case-copy, .home-hero__statement, .case-reflection</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;p class="case-copy"&gt;The final design made the app easier to scan and more visually coherent across major screens.&lt;/p&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><p class="case-copy">The final design made the app easier to scan and more visually coherent across major screens.</p></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-eyebrow">
+          <h3 class="style-component__title">Eyebrow / Metadata Label</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.eyebrow, .section-kicker, .metadata-row__label</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;span class="eyebrow"&gt;* Featured Work&lt;/span&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><span class="eyebrow">* Featured Work</span></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-buttons">
+          <h3 class="style-component__title">Buttons and CTA Links</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.button, .button--primary, .button--minimal, .button--outline-dark</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;a class="button button--primary" href="work.html"&gt;View My Work &lt;span class="arrow" aria-hidden="true"&gt;-&amp;gt;&lt;/span&gt;&lt;/a&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><div class="button-row"><a class="button button--primary" href="work.html">View My Work <span class="arrow" aria-hidden="true">-&gt;</span></a><a class="button button--minimal" href="about.html">About me</a></div></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-text-links">
+          <h3 class="style-component__title">In-text Links</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.text-link, .arrow</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;a class="text-link muted" href="work.html"&gt;View all work &lt;span class="arrow" aria-hidden="true"&gt;-&amp;gt;&lt;/span&gt;&lt;/a&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><a class="text-link muted" href="work.html">View all work <span class="arrow" aria-hidden="true">-&gt;</span></a></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-primary-nav">
+          <h3 class="style-component__title">Primary Navigation</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.site-nav, .site-nav__link, .site-nav__link[aria-current="page"]</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;nav class="site-nav" aria-label="Primary navigation"&gt;
+  &lt;a class="site-nav__link" href="index.html"&gt;Home&lt;/a&gt;
+  &lt;a class="site-nav__link" href="work.html" aria-current="page"&gt;Work&lt;/a&gt;
+&lt;/nav&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><nav class="site-nav style-nav-demo" aria-label="Style guide primary navigation example"><a class="site-nav__link" href="index.html">Home</a><a class="site-nav__link" href="work.html" aria-current="page">Work</a><a class="site-nav__link" href="about.html">About</a><a class="site-nav__link" href="contact.html">Contact</a></nav></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-mobile-toggle">
+          <h3 class="style-component__title">Mobile Navigation Toggle</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.nav-toggle, .nav-toggle__line, .site-nav.is-open</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav"&gt;
+  &lt;span class="nav-toggle__line" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span class="nav-toggle__line" aria-hidden="true"&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><button class="nav-toggle style-toggle-demo" type="button" aria-label="Toggle navigation example" aria-expanded="false"><span class="nav-toggle__line" aria-hidden="true"></span><span class="nav-toggle__line" aria-hidden="true"></span></button></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-tags">
+          <h3 class="style-component__title">Tags / Pills</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.tag-list, .tag, .tag--active</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;div class="tag-list" aria-label="Professional interests"&gt;
+  &lt;span class="tag tag--active"&gt;UI/UX Design&lt;/span&gt;
+  &lt;span class="tag"&gt;Interaction Design&lt;/span&gt;
+&lt;/div&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><div class="tag-list" aria-label="Style guide tag example"><span class="tag tag--active">UI/UX Design</span><span class="tag">Interaction Design</span><span class="tag">Game UX</span></div></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-metadata">
+          <h3 class="style-component__title">Project Metadata</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.metadata-row, .metadata-row__label, .meta-grid, .meta-grid__item</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;dl class="metadata-row"&gt;
+  &lt;div&gt;&lt;dt class="metadata-row__label"&gt;Role&lt;/dt&gt;&lt;dd&gt;UI/UX &amp;middot; Frontend&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt class="metadata-row__label"&gt;Year&lt;/dt&gt;&lt;dd&gt;2026&lt;/dd&gt;&lt;/div&gt;
+&lt;/dl&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><dl class="metadata-row"><div><dt class="metadata-row__label">Role</dt><dd>UI/UX &middot; Frontend</dd></div><div><dt class="metadata-row__label">Year</dt><dd>2026</dd></div></dl></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-project-card">
+          <h3 class="style-component__title">Project Card</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.project-card, .project-card__media, .project-card__body, .project-card__title</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;article class="project-card"&gt;
+  &lt;a class="project-card__media" href="stylist.html" aria-label="View the STYLIST case study"&gt;
+    &lt;div class="media-frame media-frame--project media-frame--stylist"&gt;
+      &lt;img src="images/stylist-brand.png" width="1170" height="723" alt="STYLIST app brand screen with the hanger logo, wordmark, and the tagline 'Your personal wardrobe assistant'" loading="lazy"&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;div class="project-card__body"&gt;
+    &lt;div class="project-card__meta"&gt;&lt;span class="accent"&gt;01&lt;/span&gt;&lt;span&gt;Mobile Development&lt;/span&gt;&lt;/div&gt;
+    &lt;h3 class="project-card__title"&gt;&lt;a href="stylist.html"&gt;STYLIST&lt;/a&gt;&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><article class="project-card style-card-demo"><a class="project-card__media" href="stylist.html" aria-label="View the STYLIST case study"><div class="media-frame media-frame--project media-frame--stylist"><img src="images/stylist-brand.png" width="1170" height="723" alt="STYLIST app brand screen with the hanger logo, wordmark, and the tagline 'Your personal wardrobe assistant'" loading="lazy"></div></a><div class="project-card__body"><div class="project-card__meta"><span class="accent">01</span><span>Mobile Development</span></div><h4 class="project-card__title"><a href="stylist.html">STYLIST</a></h4><p class="project-card__description">A mobile outfit-planning app that helps users make daily clothing decisions.</p></div></article></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-figure">
+          <h3 class="style-component__title">Figure and Caption</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.figure-card, .figure-card figcaption, .caption</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;figure class="figure-card"&gt;
+  &lt;img src="images/control-scheme.png" width="906" height="510" alt="Control scheme diagram..." loading="lazy"&gt;
+  &lt;figcaption&gt;The Mover and Maker use different devices and responsibilities.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><figure class="figure-card"><img src="images/control-scheme.png" width="906" height="510" alt="Control scheme diagram for the Mover and Maker controls" loading="lazy"><figcaption>The Mover and Maker use different devices and responsibilities.</figcaption></figure></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-video">
+          <h3 class="style-component__title">Video Preview Card</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.video-card, .video-card__link, .video-card__play, .video-card__label</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;figure class="video-card video-card--stylist"&gt;
+  &lt;a class="video-card__link" href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)"&gt;
+    &lt;span class="video-card__play" aria-hidden="true"&gt;&lt;span class="video-card__icon"&gt;&amp;#9658;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class="video-card__label"&gt;YouTube Walkthrough&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><figure class="video-card video-card--stylist"><a class="video-card__link" href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)"><span class="video-card__play" aria-hidden="true"><span class="video-card__icon">&#9658;</span></span><span class="video-card__label">YouTube Walkthrough</span></a><figcaption>A short walkthrough of STYLIST's wardrobe, preferences, and outfit-generation flow.</figcaption></figure></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-transcript">
+          <h3 class="style-component__title">Video Description and Transcript</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.transcript-debt, .transcript-list, .transcript-list time</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;details class="transcript-debt"&gt;
+  &lt;summary&gt;Video description and transcript&lt;/summary&gt;
+  &lt;ol class="transcript-list"&gt;
+    &lt;li&gt;&lt;time datetime="PT0S"&gt;00:00:00&lt;/time&gt;&lt;p&gt;Hey, you.&lt;/p&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/details&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><details class="transcript-debt"><summary>Video description and transcript</summary><ol class="transcript-list"><li><time datetime="PT0S">00:00:00</time><p>Hey, you.</p></li></ol></details></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-contact">
+          <h3 class="style-component__title">Contact Links</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.contact-list, .contact-link, .contact-link__label, .contact-link__value</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;a class="contact-link" href="mailto:allycui2004@gmail.com"&gt;
+  &lt;span&gt;&lt;span class="contact-link__label"&gt;Email&lt;/span&gt;&lt;span class="contact-link__value"&gt;allycui2004@gmail.com&lt;/span&gt;&lt;/span&gt;
+  &lt;span class="contact-link__arrow" aria-hidden="true"&gt;-&amp;gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><div class="contact-list"><a class="contact-link" href="mailto:allycui2004@gmail.com"><span><span class="contact-link__label">Email</span><span class="contact-link__value">allycui2004@gmail.com</span></span><span class="contact-link__arrow" aria-hidden="true">-&gt;</span></a></div></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-footer">
+          <h3 class="style-component__title">Footer</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>.site-footer, .site-footer__grid, .site-footer__links, .site-footer__bottom</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;footer class="site-footer"&gt;
+  &lt;div class="container site-footer__grid"&gt;
+    &lt;nav class="site-footer__column site-footer__column--wide" aria-label="Portfolio meta pages"&gt;
+      &lt;h2 class="site-footer__heading"&gt;Meta&lt;/h2&gt;
+      &lt;div class="site-footer__links"&gt;&lt;a href="style-guide.html"&gt;Style Guide&lt;/a&gt;&lt;a href="citations.html"&gt;Citations&lt;/a&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><div class="style-footer-demo site-footer"><div class="site-footer__grid"><div class="site-footer__intro"><div class="site-footer__brand"><span class="site-footer__brand-name">Ally Cui</span><span class="site-footer__dot" aria-hidden="true"></span></div><p class="site-footer__description">UI/UX &amp; Interaction Designer.</p></div><nav class="site-footer__column" aria-label="Style guide footer example"><h5 class="site-footer__heading">Meta</h5><div class="site-footer__links"><a href="style-guide.html">Style Guide</a><a href="citations.html">Citations</a></div></nav></div></div></section>
+          </div>
+        </article>
+
+        <article class="style-component" id="component-focus">
+          <h3 class="style-component__title">Keyboard Focus State</h3>
+          <div class="style-doc-grid">
+            <section><h4>CSS Selector</h4><code>:focus-visible, .skip-link:focus-visible</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;a class="button button--primary" href="style-guide.html"&gt;Keyboard focus target&lt;/a&gt;</code></pre></section>
+            <section><h4>Rendered Element</h4><a class="button button--primary" href="style-guide.html">Keyboard focus target</a><p class="style-note">Use the Tab key to view the live focus ring.</p></section>
+          </div>
+        </article>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="atomic-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Atomic Design</span>
+          <h2 class="case-heading" id="atomic-title">Atomic Design Mapping</h2>
+        </div>
+        <div class="style-map-grid">
+          <article><h3>Atoms</h3><p>Typography, links, buttons, labels, tags, focus states, colour tokens.</p></article>
+          <article><h3>Molecules</h3><p>Metadata row, figure/caption, contact link, video preview card, transcript details component.</p></article>
+          <article><h3>Organisms</h3><p>Site header, desktop navigation, mobile navigation, project card, footer, case-study section.</p></article>
+          <article><h3>Templates</h3><p>Home, work, case study, about, contact.</p></article>
+        </div>
+      </section>
+
+      <section class="style-foundations container" aria-labelledby="responsive-title">
+        <div class="style-section-header">
+          <span class="eyebrow">* Notes</span>
+          <h2 class="case-heading" id="responsive-title">Responsive and Accessibility Notes</h2>
+        </div>
+        <div class="callout-list">
+          <div class="callout-list__item"><span class="callout-list__marker">01</span><p class="callout-list__text">CSS Grid is used for twelve-column hero, project-card, case-study, footer, and media layouts; Flexbox is used for navigation, buttons, metadata rows, contact links, and footer link groups.</p></div>
+          <div class="callout-list__item"><span class="callout-list__marker">02</span><p class="callout-list__text">Media queries at 900px, 768px, and 480px collapse grids, convert the primary navigation into a keyboard-accessible toggle, and make buttons full-width on small screens.</p></div>
+          <div class="callout-list__item"><span class="callout-list__marker">03</span><p class="callout-list__text">Every migrated page uses a skip link, visible `:focus-visible` styles, meaningful image alt text, and reduced-motion support for decorative marquee and floating animation.</p></div>
+          <div class="callout-list__item"><span class="callout-list__marker">04</span><p class="callout-list__text">YouTube media uses preview cards plus same-page transcript/details components when captions cannot be confirmed.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__intro">
+          <div class="site-footer__brand">
+            <span class="site-footer__brand-name">Ally Cui</span>
+            <span class="site-footer__dot" aria-hidden="true"></span>
+          </div>
+          <p class="site-footer__description">UI/UX &amp; Interaction Designer. Currently open to new opportunities.</p>
+        </div>
+
+        <nav class="site-footer__column" aria-label="Footer sitemap">
+          <h2 class="site-footer__heading">Sitemap</h2>
+          <div class="site-footer__links">
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+
+        <div class="site-footer__column">
+          <h2 class="site-footer__heading">Contact</h2>
+          <div class="site-footer__links">
+            <a href="mailto:allycui2004@gmail.com">allycui2004@gmail.com</a>
+            <a href="tel:+17786826317">778-682-6317</a>
+          </div>
+        </div>
+
+        <nav class="site-footer__column site-footer__column--wide" aria-label="Portfolio meta pages">
+          <h2 class="site-footer__heading">Meta</h2>
+          <div class="site-footer__links">
+            <a href="style-guide.html">Style Guide</a>
+            <a href="citations.html">Citations</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container site-footer__bottom">
+        <span>&copy; 2025 Ally Cui</span>
+        <span>Designed &amp; built by Ally Cui</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
