@@ -1,3 +1,6 @@
+/* Responsive overrides: tablet (900px), small tablet (768px), mobile (480px), and reduced motion */
+
+/* Tablet: collapse navigation, stack multi-column layouts */
 @media (max-width: 900px) {
   .site-header__inner {
     align-items: center;
@@ -66,6 +69,7 @@
   }
 }
 
+/* Small tablet: typography and layout adjustments */
 @media (max-width: 768px) {
   .section-kicker {
     align-items: flex-start;
@@ -109,7 +113,6 @@
   }
 
   .style-doc-grid,
-  .style-layout-demo,
   .style-footer-demo .site-footer__grid {
     grid-template-columns: 1fr;
   }
@@ -124,6 +127,7 @@
   }
 }
 
+/* Mobile: compact spacing and full-width buttons */
 @media (max-width: 480px) {
   .site-header__inner {
     padding-block: 0.875rem;
@@ -154,12 +158,6 @@
     font-size: 0.75rem;
   }
 
-  .style-swatch-grid,
-  .style-type-grid,
-  .style-map-grid {
-    grid-template-columns: 1fr;
-  }
-
   .style-doc-grid pre {
     white-space: pre-wrap;
   }
@@ -179,6 +177,7 @@
   }
 }
 
+/* Reduced motion: disable animations and transitions */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

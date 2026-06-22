@@ -1,3 +1,7 @@
+/* Structural layout: container, grids, hero splits, case study sections, and spacing utilities */
+
+/* Centred page container */
+
 .container {
   width: min(100% - (var(--container-pad) * 2), var(--container-max));
   margin-inline: auto;
@@ -6,6 +10,8 @@
 .main-content {
   flex: 1;
 }
+
+/* Section spacing and background modifiers */
 
 .section {
   padding-block: clamp(3.5rem, 8vw, 6.875rem) clamp(1.875rem, 4vw, 3.75rem);
@@ -30,6 +36,8 @@
   gap: clamp(1.5rem, 4vw, 3rem);
 }
 
+/* Split hero: copy column left, media column right */
+
 .split-hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -47,6 +55,8 @@
   grid-column: span 5;
   min-width: 13.75rem;
 }
+
+/* Two-column layout: narrow aside and wide main content */
 
 .two-column-copy {
   display: grid;
@@ -70,6 +80,8 @@
   gap: clamp(1.75rem, 4vw, 3rem);
 }
 
+/* Case study section layout */
+
 .case-section {
   border-top: var(--border-thin);
   padding-block: clamp(3rem, 6vw, 5.5rem);
@@ -90,6 +102,8 @@
   grid-column: span 8;
   min-width: 17.5rem;
 }
+
+/* Responsive image comparison grid */
 
 .media-grid {
   display: grid;

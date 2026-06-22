@@ -1,3 +1,5 @@
+/* Global reset and base element styles */
+
 *,
 *::before,
 *::after {
@@ -49,6 +51,37 @@ button {
   font: inherit;
 }
 
+/* Heading scale */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: -0.02em;
+}
+
+/* Selection highlight and keyboard focus ring */
+
 ::selection {
   background: var(--color-accent);
   color: var(--color-ink);
@@ -59,6 +92,8 @@ button {
   outline-offset: 4px;
   box-shadow: var(--focus-ring);
 }
+
+/* Skip-to-content link: visually hidden until focused */
 
 .skip-link {
   position: fixed;
@@ -79,6 +114,8 @@ button {
 .skip-link:focus-visible {
   transform: translateY(0);
 }
+
+/* Utility colour and type classes */
 
 .eyebrow {
   color: var(--color-ink);
@@ -110,6 +147,8 @@ button {
   color: var(--color-ink);
 }
 
+/* Underline text link */
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -125,6 +164,8 @@ button {
   border-bottom-color: var(--color-accent);
   color: var(--color-ink);
 }
+
+/* Arrow: inherits Space Mono for consistent glyph rendering */
 
 .arrow {
   font-family: var(--font-mono);
