@@ -51,7 +51,7 @@ button {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-paper);
+  color: var(--color-ink);
 }
 
 :focus-visible {
@@ -67,7 +67,7 @@ button {
   z-index: 100;
   transform: translateY(-150%);
   background: var(--color-accent);
-  color: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
@@ -81,7 +81,7 @@ button {
 }
 
 .eyebrow {
-  color: var(--color-accent);
+  color: var(--color-ink);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.12em;
@@ -100,6 +100,16 @@ button {
   color: var(--color-accent);
 }
 
+.section--dark .eyebrow,
+.section--dark .accent {
+  color: var(--color-accent);
+}
+
+.project-card__meta .accent,
+.metadata-row .accent {
+  color: var(--color-ink);
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -112,7 +122,8 @@ button {
 
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+  color: var(--color-ink);
 }
 
 .arrow {

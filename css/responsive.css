@@ -117,6 +117,11 @@
   .style-doc-grid section {
     min-width: 0;
   }
+
+  .citation-section__header {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
 }
 
 @media (max-width: 480px) {
@@ -158,6 +163,20 @@
   .style-doc-grid pre {
     white-space: pre-wrap;
   }
+
+  .citation-list--compact {
+    grid-template-columns: 1fr;
+  }
+
+  .next-project--split {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .next-project--split .next-project__link {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,6 +194,19 @@
   }
 
   .marquee__track {
-    animation: none;
+    width: auto;
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .marquee__set {
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: var(--space-4);
+  }
+
+  .marquee__set[aria-hidden="true"] {
+    display: none;
   }
 }
