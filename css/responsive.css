@@ -37,6 +37,7 @@
   .split-hero,
   .project-card,
   .two-column-copy,
+  .case-section__grid,
   .site-footer__grid {
     grid-template-columns: 1fr;
   }
@@ -47,6 +48,8 @@
   .project-card__body,
   .two-column-copy__aside,
   .two-column-copy__main,
+  .case-section__aside,
+  .case-section__content,
   .site-footer__intro,
   .site-footer__column,
   .site-footer__column--wide {
@@ -81,6 +84,12 @@
 
   .site-footer__bottom {
     flex-direction: column;
+  }
+
+  .card-grid,
+  .media-grid,
+  .media-grid--wide {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STYLIST Case Study | Ally Cui</title>
+  <meta name="description" content="A STYLIST mobile UX case study by Ally Cui, covering wardrobe data, weather-aware outfit planning, interface refinement, and React Native implementation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/templates.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="brand" href="index.html" aria-label="Ally Cui home">
+          <span class="brand__name">Ally Cui</span>
+          <span class="brand__dot" aria-hidden="true"></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+          <a class="site-nav__link" href="index.html">Home</a>
+          <a class="site-nav__link" href="work.html" aria-current="page">Work</a>
+          <a class="site-nav__link" href="about.dc.html">About</a>
+          <a class="site-nav__link" href="contact.dc.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="breadcrumb container"><a href="work.html">Work</a> / <span>STYLIST</span></div>
+
+      <section class="case-hero container" aria-labelledby="stylist-title">
+        <span class="case-hero__eyebrow">Mobile UX Design &middot; React Native</span>
+        <h1 class="case-hero__title" id="stylist-title">STYLIST</h1>
+        <p class="case-hero__lead">A mobile outfit-planning app that helps users make daily clothing decisions using wardrobe data, weather conditions, formality preferences, and personal style tags.</p>
+
+        <dl class="meta-grid spaced-block">
+          <div class="meta-grid__item"><dt class="meta-grid__label">Role</dt><dd class="meta-grid__value">UI/UX &middot; Frontend &middot; Interface Refinement</dd></div>
+          <div class="meta-grid__item"><dt class="meta-grid__label">Year</dt><dd class="meta-grid__value">Spring 2026</dd></div>
+          <div class="meta-grid__item"><dt class="meta-grid__label">Course</dt><dd class="meta-grid__value">IAT 359: Mobile Computing</dd></div>
+          <div class="meta-grid__item"><dt class="meta-grid__label">Tools</dt><dd class="meta-grid__value">React Native &middot; Expo &middot; Firebase &middot; AsyncStorage &middot; Weather APIs</dd></div>
+        </dl>
+
+        <figure class="video-card video-card--stylist">
+          <a class="video-card__link" href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)">
+            <span class="video-card__play" aria-hidden="true"><span class="video-card__icon">&#9658;</span></span>
+            <span class="video-card__label">YouTube Walkthrough</span>
+          </a>
+          <figcaption>A short walkthrough of STYLIST's wardrobe, preferences, and outfit-generation flow.</figcaption>
+        </figure>
+        <details class="transcript-debt">
+          <summary>Video description and transcript</summary>
+          <ol class="transcript-list">
+            <li>
+              <time datetime="PT1S">00:00:01</time>
+              <p>This is our app, Stylist. The purpose is to create kind of a mobile walking closet, and our target users are those with large wardrobes so that they can't physically catalog it all. And and maybe if you're like really busy, you can't put together outfit, or if the weather is super, you know, it's super dynamic in your area, you want something to kind of help keep up with that. This is where our app shines. And so, we're going to log in here using Firebase authentication. And first we're going to use a a wrong</p>
+            </li>
+            <li>
+              <time datetime="PT27S">00:00:27</time>
+              <p>sign up to show that we do in fact have the try catch blocks, but we're going to use an actual email now to really sign up and create this new account. So, now we're just going to log in with a testing account that we made. Populate it with some images already. So, as you can see, we're presented with the home page, and this has a couple of components here. First, we have the weather widget at the top. This one pulls from Expo location for coordinates if you granted location permission. Um</p>
+            </li>
+            <li>
+              <time datetime="PT59S">00:00:59</time>
+              <p>we also use Google weather API for weather, obviously. We have time zone API, and we have a geocoding API for that little address you see at the top. And then the main feature here is the user's closet, which has a collection of their clothing items in images. These photos are served from Firestore, so we store them using the URI, and then we pull them uh to display as image components, and they're tied to user ID as well. And so, now we're going to head over to the settings page, and you'll see we</p>
+            </li>
+            <li>
+              <time datetime="PT1M28S">00:01:28</time>
+              <p>have a variety of settings, uh many of which are stored using async storage, local storage on the device. Here, for example, static location, we're going to change the location to Toronto for the app to pull from. And of course, we have our display name as well. This one's actually stored within Firestore in order to authenticate it with the user. I'll call it Stylist. And yeah, you can see there are a lot of different settings here, the Celsius, saving username for future login, those</p>
+            </li>
+            <li>
+              <time datetime="PT1M51S">00:01:51</time>
+              <p>are both async. The color theme as well. And yeah, that's a local storage as well. You can save settings, you can reset to default or you can log out for, you know, Firestore um Firestore authentication. And now we're going to go to add item screen. And we did utilize Expo image picker. Um this allows the application to access the camera and media files and kind of upload them into our app. And you can see here we go straight into the file library. And all of these all of these fields that you're going to see, all these</p>
+            </li>
+            <li>
+              <time datetime="PT2M26S">00:02:26</time>
+              <p>attributes are um attached to the data object. I'm just going to go ahead and add this black tee for example. Oh yes, and the item tags there that you saw that is stored as an array. And so yeah, here in the closet we can kind of see click on the detail of these items. And yeah, you'll see the attributes that we put set in as well as the ability to close or uh delete item from our collection from our data collection in Firestore. I'll do that right now. So this is the section of the code where</p>
+            </li>
+            <li>
+              <time datetime="PT3M6S">00:03:06</time>
+              <p>um we utilize Firestore to insert items into the database. And so it kind of revolves around these use states of where the attributes are held and this corresponds with uh the UI element so the user can set those accordingly. Um you can see we did we did import Firestore as we should and also um one of the main features we have is utilizing the camera. And so one of the options here get camera image, it let it launches the image picker launch camera async and then these are kind of the options for</p>
+            </li>
+            <li>
+              <time datetime="PT3M33S">00:03:33</time>
+              <p>that as well as this is the this is the code for letting the user pick through the library, the media library. And there's options here. Yeah, so we have native camera and file system support. And this is where this is where the the item actually gets inserted into the collection and this in this function here that we kind of create an object with the attributes of the clothing. And then Yeah, and then we just kind of just add the doc to the images collection in our database for Firestore. And of course, you know, we have</p>
+            </li>
+            <li>
+              <time datetime="PT4M4S">00:04:04</time>
+              <p>statuses and navigations for if it's successful. We have the catch in case it's not. And then yeah, this this just a quick overview of the CSS. And HTML. So, let's switch over to the outfit generation page. And so, this is it's not a complicated algorithm. It's one Firestore query and then um some systematic application of array filters using JavaScript. And um this is for the most part this done completely on the device. And we're going to see we're going to make a casual outfit here.</p>
+            </li>
+            <li>
+              <time datetime="PT4M41S">00:04:41</time>
+              <p>And there you go. There's four clothing items right there. Um we actually we we don't necessarily pull the images, but we we store we we we generate an array a four-item array of photo IDs, image paths, and then we use those image paths to kind of tell the app which file to display and where. Uh you can see here on this page we do have the ability to set the outfit formality as well as uh the ability to input a tag. And of course, this aligns with the attributes of the clothes that we've set earlier.</p>
+            </li>
+            <li>
+              <time datetime="PT5M12S">00:05:12</time>
+              <p>And while formality is quite strict, the tag is for the most part a suggestion more than like um direct control over what items show up. Here's the code for the main function in our application, which of course is generating outfits. It uses both Firestore and Google Maps API data and Google Weather. And so, here we'll have some use states that we use to kind of iterate through to kind of build our outfit array. And here, yes, we used a Google Maps API key, as I stated. Import that theme. Update location permission.</p>
+            </li>
+            <li>
+              <time datetime="PT5M39S">00:05:39</time>
+              <p>Since it's a different screen, we do have to ask for location permissions again, if possible. Um and either way uh Like user can choose to use the saved settings from async storage. Yeah, and here we um start pulling from the Maps API to fetch uh the coordinates of where the user is. Here's a helper function to for temperature and then return a warm value to use in the clothing algorithm. And this is the actual algorithm here. As you can see, we start with a null array, and each Some of these values, it doesn't have to</p>
+            </li>
+            <li>
+              <time datetime="PT6M7S">00:06:07</time>
+              <p>be all of them, but some of them may be replaced by a string or a photo ID, and then that can be used to pull the image path from the database. And here, here's the query for every every item that belongs to the user. And then, as you can kind of see, we just start filtering it out systematically based on the attributes of what the user kind of needs in that moment, which uh primarily is formality and the warm value, as we stated. Oh, yeah, and here we fetch the longitude latitude from an address.</p>
+            </li>
+            <li>
+              <time datetime="PT6M34S">00:06:34</time>
+              <p>Here's Yep, here's the call to the REST API geocoding. Fetching current temperature, this is using uh the Weather API, another REST API. And use effects are kind of like guide the some of the components. Yeah, that's pretty much it. And then here's the HTML, the CSS.</p>
+            </li>
+          </ol>
+        </details>
+        <div class="button-row spaced-block">
+          <a class="button button--primary" href="https://www.youtube.com/watch?v=gbyDAjrPlco" target="_blank" rel="noopener" aria-label="Watch the STYLIST product walkthrough on YouTube (opens in a new tab)">Watch Product Walkthrough <span class="arrow" aria-hidden="true">-&gt;</span></a>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stylist-context">
+        <div class="container case-section__grid">
+          <aside class="case-section__aside"><span class="eyebrow">01 - Context</span></aside>
+          <div class="case-section__content">
+            <h2 class="case-heading" id="stylist-context">What STYLIST is</h2>
+            <p class="case-copy">A clothing-management and outfit-recommendation app where users can add clothing items, organize a digital wardrobe, view weather information, and generate outfit suggestions.</p>
+            <p class="case-copy">STYLIST was designed to reduce the everyday mental effort of choosing an outfit. Choosing what to wear can require users to consider weather, formality, available clothing, and personal style all at once. The app combines wardrobe management, local weather information, formality preferences, and personal tags to help users make a more confident decision.</p>
+            <p class="case-copy">STYLIST was built as a team project for IAT 359: Mobile Computing.</p>
+            <div class="callout">
+              <div class="callout__label">My role</div>
+              <p class="callout__text">UI/UX design, frontend implementation, interface refinement, and improving visual consistency across the app, especially through the Add Item and Settings experiences.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section--dark" aria-labelledby="stylist-challenge">
+        <div class="container case-section__grid">
+          <aside class="case-section__aside"><span class="eyebrow">02 - The Challenge</span></aside>
+          <div class="case-section__content">
+            <h2 class="case-heading case-heading--large" id="stylist-challenge">How might I organize several required clothing inputs so users can add an item confidently, without feeling overwhelmed?</h2>
+            <p class="case-copy">The Add Item flow required users to enter several types of information at once. In the earlier interface these controls appeared together with limited hierarchy: the screen was functional, but visually dense and difficult to scan.</p>
+            <div class="tag-list spaced-block" aria-label="Add Item information types">
+              <span class="tag">A clothing photo</span>
+              <span class="tag">Clothing type</span>
+              <span class="tag">Warmth level</span>
+              <span class="tag">Formality level</span>
+              <span class="tag">Personal tags</span>
+            </div>
+            <p class="case-copy">Users needed to understand where to start, which decisions belonged together, and what to do next, without treating the screen as one long form.</p>
+            <figure class="figure-card figure-card--phone figure-card--phone-narrow">
+              <img src="images/add-before.png" width="946" height="2048" alt="Early Add Item screen showing a single dense form with photo, name, type, warmth, formality, and tags stacked together" loading="lazy">
+              <figcaption>Early Add Item screen. Required inputs were visible, but photo capture, item details, sliders, and tags competed for attention at once.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stylist-process">
+        <div class="container">
+          <div class="case-section__grid">
+            <aside class="case-section__aside"><span class="eyebrow">03 - Process &amp; Iteration</span></aside>
+            <div class="case-section__content">
+              <h2 class="case-heading" id="stylist-process">Reframing the Add Item flow</h2>
+              <p class="case-copy">The early approach showed all essential inputs on one long screen so users could finish without navigating multiple pages. But putting everything together made the experience feel crowded, with little guidance about where to begin or how photo selection, item details, attributes, and tags related to one another.</p>
+            </div>
+          </div>
+
+          <div class="media-grid media-grid--wide">
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge">Before</span><span class="label-row__text">one dense screen</span></div>
+              <img src="images/add-before.png" width="946" height="2048" alt="Early Add Item screen, one long form" loading="lazy">
+            </figure>
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge label-badge--accent">After</span><span class="label-row__text">Photo + Basic Information</span></div>
+              <img src="images/add-top.png" width="1170" height="2532" alt="Revised Add Item, Photo and Basic Information section" loading="lazy">
+            </figure>
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge label-badge--accent">After</span><span class="label-row__text">Attributes + Tags</span></div>
+              <img src="images/add-bottom.png" width="1170" height="2532" alt="Revised Add Item, Attributes and Tags section with Add to Wardrobe button" loading="lazy">
+            </figure>
+          </div>
+          <p class="caption">The revised Add Item flow separates Photo, Basic Information, Attributes, and Tags into distinct sections, reducing visual density and giving users a clearer starting point.</p>
+
+          <div class="case-section__grid spaced-block">
+            <aside class="case-section__aside"><span class="soft eyebrow">Design decisions</span></aside>
+            <div class="case-section__content callout-list">
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Separate the flow into meaningful sections.</strong> Photo, Basic Information, Attributes, and Tags each became their own grouping.</p></div>
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Use labels and card groupings.</strong> Clarify what information belongs together at a glance.</p></div>
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Apply deliberate spacing</strong> between decisions, and repeat control styles for sliders, buttons, text inputs, and tags.</p></div>
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Create a clearer progression</strong> from identifying an item to describing its properties.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stylist-settings">
+        <div class="container">
+          <div class="case-section__grid">
+            <aside class="case-section__aside"><span class="eyebrow">04 - Extending the Visual System</span></aside>
+            <div class="case-section__content">
+              <h2 class="case-heading" id="stylist-settings">Carrying the system into Settings</h2>
+              <p class="case-copy">The goal was to apply the same principles of grouping, hierarchy, and consistency beyond Add Item. The earlier Settings screen placed display name, location, toggles, theme selection, save and reset controls, and logout in one long continuous form. Each control worked, but the page didn't clearly distinguish account information, preferences, appearance, and actions.</p>
+            </div>
+          </div>
+          <div class="media-grid media-grid--wide">
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge">Before</span><span class="label-row__text">continuous form</span></div>
+              <img src="images/setting-before.png" width="946" height="2048" alt="Early Settings screen, one continuous form" loading="lazy">
+            </figure>
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge label-badge--accent">After</span><span class="label-row__text">Account + Preferences</span></div>
+              <img src="images/setting-top.png" width="1170" height="2532" alt="Revised Settings, Account and Preferences sections" loading="lazy">
+            </figure>
+            <figure class="figure-card figure-card--phone">
+              <div class="label-row"><span class="label-badge label-badge--accent">After</span><span class="label-row__text">Appearance + Actions</span></div>
+              <img src="images/setting-bottom.png" width="1170" height="2532" alt="Revised Settings, Appearance and Actions sections" loading="lazy">
+            </figure>
+          </div>
+          <p class="caption">The revised Settings experience organizes controls into Account, Preferences, Appearance, and Actions, helping users understand what each setting affects and where to find it.</p>
+          <div class="case-section__grid spaced-block">
+            <aside class="case-section__aside"><span class="soft eyebrow">Design decisions</span></aside>
+            <div class="case-section__content callout-list">
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Group controls into Account, Preferences, Appearance, and Actions</strong> using card-based sections to separate related controls.</p></div>
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Improve spacing and label hierarchy</strong> so the page reads in a clear order.</p></div>
+              <div class="callout-list__item"><span class="callout-list__marker">-&gt;</span><p class="callout-list__text"><strong>Make inputs, toggles, buttons, and theme controls visually consistent</strong> with the rest of the app, so users can scan more quickly.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section--dark" aria-labelledby="stylist-implementation">
+        <div class="container case-section__grid">
+          <aside class="case-section__aside"><span class="eyebrow">05 - Implementation &amp; System Support</span></aside>
+          <div class="case-section__content">
+            <h2 class="case-heading" id="stylist-implementation">Making the interface feel dependable</h2>
+            <p class="case-copy">Alongside the visual refinement, I implemented settings-related interactions in React Native, including persistent preferences such as temperature units, location inputs, and display settings. This helped the interface feel dependable across sessions while supporting a consistent experience across the app.</p>
+            <div class="support-grid">
+              <article class="support-card">
+                <h3 class="support-card__title">React Native</h3>
+                <p class="support-card__text">Frontend implementation and interface refinement</p>
+              </article>
+              <article class="support-card">
+                <h3 class="support-card__title">AsyncStorage</h3>
+                <p class="support-card__text">Persistent user preferences</p>
+              </article>
+              <article class="support-card">
+                <h3 class="support-card__title">Firebase</h3>
+                <p class="support-card__text">Wardrobe and account-linked data</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stylist-outcome">
+        <div class="container">
+          <div class="case-section__grid">
+            <aside class="case-section__aside"><span class="eyebrow">06 - Final Outcome</span></aside>
+            <div class="case-section__content">
+              <h2 class="case-heading" id="stylist-outcome">Easier to scan, calmer to navigate, more coherent</h2>
+              <p class="case-copy">The final design made the app easier to scan and more visually coherent across major screens. Add Item became easier to begin and complete; Settings became easier to scan and understand. Repeated cards, labels, controls, spacing, and navigation patterns made the app feel like one product, better connecting wardrobe management, weather-aware recommendations, and user preferences.</p>
+            </div>
+          </div>
+          <div class="media-grid">
+            <figure class="figure-card figure-card--phone">
+              <img src="images/closet.png" width="1170" height="2532" alt="Final Closet screen with saved wardrobe items in a grid" loading="lazy">
+              <figcaption>Final Closet screen with saved wardrobe items. Repeated cards, controls, spacing, and navigation patterns create a more consistent product experience.</figcaption>
+            </figure>
+            <figure class="figure-card figure-card--phone">
+              <img src="images/outfit.png" width="1170" height="2532" alt="Final Outfit Generator result combining wardrobe items, dress code, and style filter" loading="lazy">
+              <figcaption>Final Outfit Generator view. Wardrobe data, weather conditions, and formality preferences are combined into a focused outfit decision.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stylist-reflection">
+        <div class="container case-section__grid">
+          <aside class="case-section__aside"><span class="eyebrow">07 - Reflection &amp; Ethos</span></aside>
+          <div class="case-section__content">
+            <h2 class="case-reflection" id="stylist-reflection">Simplicity does not come from placing every control on one screen. It comes from understanding what users need to know first, grouping related information, and making the next action feel obvious.</h2>
+            <p class="case-copy">This project reinforced that usability often depends more on how information is grouped, sequenced, and labeled than on visual polish alone. STYLIST reflects my approach to interaction design: turning complex systems into interactions that feel easier to understand, navigate, and enjoy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section--dark">
+        <div class="container next-project">
+          <div>
+            <div class="next-project__label">Next project</div>
+            <div class="next-project__title">Export to: Reality</div>
+          </div>
+          <a class="button button--primary button--dark-inverse" href="export-to-reality.html">View case study <span class="arrow" aria-hidden="true">-&gt;</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__intro"><div class="site-footer__brand"><span class="site-footer__brand-name">Ally Cui</span><span class="site-footer__dot" aria-hidden="true"></span></div><p class="site-footer__description">UI/UX &amp; Interaction Designer. Currently open to new opportunities.</p></div>
+        <nav class="site-footer__column" aria-label="Footer sitemap"><h2 class="site-footer__heading">Sitemap</h2><div class="site-footer__links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.dc.html">About</a><a href="contact.dc.html">Contact</a></div></nav>
+        <div class="site-footer__column"><h2 class="site-footer__heading">Contact</h2><div class="site-footer__links"><a href="mailto:allycui2004@gmail.com">allycui2004@gmail.com</a><a href="tel:+17786826317">778-682-6317</a></div></div>
+        <nav class="site-footer__column site-footer__column--wide" aria-label="Portfolio meta pages"><h2 class="site-footer__heading">Meta</h2><div class="site-footer__links"><a href="style-guide.html">Style Guide</a><a href="citations.html">Citations</a></div></nav>
+      </div>
+      <div class="container site-footer__bottom"><span>&copy; 2025 Ally Cui</span><span>Designed &amp; built by Ally Cui</span></div>
+    </footer>
+  </div>
+</body>
+</html>

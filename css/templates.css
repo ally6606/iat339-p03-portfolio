@@ -110,3 +110,118 @@
 .home-contact__actions {
   margin-top: 2.75rem;
 }
+
+.work-hero {
+  padding-block: clamp(2.5rem, 6vw, 6rem) clamp(2.25rem, 5vw, 3.75rem);
+}
+
+.work-hero__title,
+.case-hero__title {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+}
+
+.work-hero__title {
+  font-size: clamp(2.875rem, 9vw, 7.375rem);
+}
+
+.work-hero__lead,
+.case-hero__lead {
+  margin-top: 1.75rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.36;
+}
+
+.work-hero__lead {
+  max-width: 30ch;
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+}
+
+.work-list {
+  padding-bottom: clamp(3.5rem, 8vw, 6.875rem);
+}
+
+.work-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  border-top: var(--border-thin);
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+.work-note__text {
+  color: var(--color-muted);
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+  font-style: italic;
+}
+
+.case-hero {
+  padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(2.5rem, 5vw, 4rem);
+}
+
+.case-hero__eyebrow {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-hero__title {
+  font-size: clamp(3.375rem, 12vw, 10rem);
+}
+
+.case-hero__title--long {
+  font-size: clamp(2.625rem, 9.5vw, 8.25rem);
+}
+
+.case-hero__lead {
+  max-width: 42ch;
+  font-size: clamp(1.3125rem, 2.6vw, 2.125rem);
+}
+
+.case-hero__body {
+  max-width: 62ch;
+  margin-top: 1.125rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.case-heading {
+  font-size: clamp(1.625rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.case-heading--large {
+  font-size: clamp(1.75rem, 3.6vw, 2.875rem);
+}
+
+.case-copy {
+  max-width: 62ch;
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.section--dark .case-copy {
+  color: rgba(250, 247, 241, 0.72);
+}
+
+.case-reflection {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+  font-weight: 300;
+  line-height: 1.4;
+}
