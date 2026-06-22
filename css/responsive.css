@@ -91,6 +91,22 @@
   .media-grid--wide {
     grid-template-columns: 1fr;
   }
+
+  .about-hero__grid,
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__media,
+  .about-hero__content {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .about-hero__media {
+    position: static;
+    max-width: 24rem;
+  }
 }
 
 @media (max-width: 480px) {
