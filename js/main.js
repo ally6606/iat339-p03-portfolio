@@ -1,4 +1,6 @@
 // Mobile navigation toggle — applied to all pages via defer
+// IIFE keeps navigation behavior scoped and avoids global variables:
+// https://www.w3schools.com/js/js_function_iife.asp
 (function () {
   const navToggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-site-nav]");

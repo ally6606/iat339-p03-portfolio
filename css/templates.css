@@ -282,14 +282,6 @@
   line-height: 1.42;
 }
 
-.about-hero__body {
-  max-width: 58ch;
-  margin-top: var(--space-5);
-  color: var(--color-muted);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
 .about-hero__actions {
   margin-top: var(--space-7);
 }
@@ -408,11 +400,6 @@
   color: var(--color-ink);
 }
 
-.style-swatch span:last-child {
-  color: var(--color-muted);
-  font-size: 0.9375rem;
-}
-
 .style-swatch__token {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -515,8 +502,9 @@
 }
 
 .style-doc-grid pre {
-  overflow-x: auto;
+  max-width: 100%;
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .style-doc-grid pre code {
@@ -594,6 +582,14 @@
   font-size: 0.9375rem;
 }
 
+.style-focus-demo {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  box-shadow: var(--focus-ring);
+}
+
 /* Citations page */
 
 .citation-hero {
@@ -612,6 +608,8 @@
   margin-bottom: clamp(1.75rem, 4vw, 3rem);
 }
 
+/* CSS counters used for automatic citation numbering:
+   https://www.w3schools.com/CSS/css_counters.asp */
 .citation-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -621,10 +619,6 @@
   counter-reset: citation;
   list-style: none;
   padding: 0;
-}
-
-.citation-list--compact {
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .citation-item {

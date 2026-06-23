@@ -359,6 +359,16 @@ a:focus-visible .media-frame {
   text-transform: uppercase;
 }
 
+.section--dark .eyebrow,
+.section--dark .accent {
+  color: var(--color-accent);
+}
+
+.project-card__meta .accent,
+.metadata-row .accent {
+  color: var(--color-ink);
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -396,6 +406,9 @@ a:focus-visible .media-frame {
 }
 
 /* Case study project meta grid and video preview card */
+
+/* Grid-divider technique using gap and background colour:
+   https://bengammon.co.uk/colouring-css-grid-lines/ */
 
 .meta-grid {
   display: grid;
@@ -453,6 +466,8 @@ a:focus-visible .media-frame {
   background: rgba(26, 22, 19, 0.34);
 }
 
+/* Official YouTube thumbnail URLs provide lightweight video preview images
+   without embedding the full video player in the page. */
 .video-card--stylist .video-card__link {
   background-image: url("https://img.youtube.com/vi/gbyDAjrPlco/maxresdefault.jpg");
 }
@@ -788,14 +803,14 @@ a:focus-visible .media-frame {
 
 /* Expandable video description and transcript */
 
-.transcript-debt {
+.video-transcript {
   margin-top: var(--space-4);
   border: var(--border-thin);
   border-radius: var(--radius-media);
   padding: var(--space-4);
 }
 
-.transcript-debt summary {
+.video-transcript summary {
   cursor: pointer;
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -803,7 +818,7 @@ a:focus-visible .media-frame {
   text-transform: uppercase;
 }
 
-.transcript-debt p {
+.video-transcript p {
   margin-top: var(--space-3);
   color: var(--color-muted);
   font-size: 0.9375rem;
@@ -834,11 +849,11 @@ a:focus-visible .media-frame {
   margin-top: 0;
 }
 
-.section--dark .transcript-debt {
+.section--dark .video-transcript {
   border-color: rgba(250, 247, 241, 0.2);
 }
 
-.section--dark .transcript-debt p {
+.section--dark .video-transcript p {
   color: rgba(250, 247, 241, 0.7);
 }
 

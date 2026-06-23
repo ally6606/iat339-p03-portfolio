@@ -13,6 +13,9 @@
 
 /* Section spacing and background modifiers */
 
+/* Fluid sizing with clamp():
+   https://css-tricks.com/almanac/functions/c/clamp/ */
+
 .section {
   padding-block: clamp(3.5rem, 8vw, 6.875rem) clamp(1.875rem, 4vw, 3.75rem);
 }
@@ -28,12 +31,6 @@
 
 .section--bordered {
   border-top: var(--border-thin);
-}
-
-.twelve-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 /* Split hero: copy column left, media column right */

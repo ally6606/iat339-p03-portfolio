@@ -104,16 +104,6 @@ button {
   color: var(--color-accent);
 }
 
-.section--dark .eyebrow,
-.section--dark .accent {
-  color: var(--color-accent);
-}
-
-.project-card__meta .accent,
-.metadata-row .accent {
-  color: var(--color-ink);
-}
-
 /* Underline text link */
 .text-link {
   display: inline-flex;

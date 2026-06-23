@@ -162,10 +162,6 @@
     white-space: pre-wrap;
   }
 
-  .citation-list--compact {
-    grid-template-columns: 1fr;
-  }
-
   .next-project--split {
     align-items: flex-start;
     flex-direction: column;
@@ -192,6 +188,8 @@
     transition-duration: 0.001ms !important;
   }
 
+  /* Reduced-motion fallback for animated content:
+     https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion */
   .marquee__track {
     width: auto;
     animation: none !important;
