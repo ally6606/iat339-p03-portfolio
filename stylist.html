@@ -153,7 +153,11 @@
           <div class="case-section__content">
             <h2 class="section-heading section-heading--large" id="stylist-challenge">How might I organize several required clothing inputs so users can add an item confidently, without feeling overwhelmed?</h2>
             <p class="case-copy">The Add Item flow required users to enter several types of information at once. In the earlier interface these controls appeared together with limited hierarchy: the screen was functional, but visually dense and difficult to scan.</p>
-            <div class="tag-list spaced-block" aria-label="Add Item information types">
+            <div
+              class="tag-list spaced-block"
+              role="group"
+              aria-label="Add Item information types"
+            >
               <span class="tag">A clothing photo</span>
               <span class="tag">Clothing type</span>
               <span class="tag">Warmth level</span>
@@ -299,7 +303,7 @@
       </section>
 
       <!-- Next project navigation -->
-      <section class="case-section section--dark">
+      <nav class="case-section section--dark" aria-label="Project navigation">
         <div class="container next-project next-project--split">
           <a class="next-project__all-link" href="work.html"><span aria-hidden="true">&larr;</span> View all work</a>
           <a class="next-project__link" href="export-to-reality.html">
@@ -307,7 +311,7 @@
             <span class="next-project__title">Export to: Reality</span>
           </a>
         </div>
-      </section>
+      </nav>
     </main>
 
     <!-- Shared footer -->

@@ -117,7 +117,7 @@
     grid-template-columns: 1fr;
   }
 
-  .style-doc-grid section {
+  .style-doc-cell {
     min-width: 0;
   }
 

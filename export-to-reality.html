@@ -75,8 +75,8 @@
             <p class="case-copy">Export to: Reality began with a design question: what if one player could manipulate the game world rather than directly controlling the character? Our team developed this into a shared-screen, asymmetric co-op platformer where each player has a different input device, responsibility, and perspective on the same challenge.</p>
             <p class="case-copy">The game follows the Mover as they travel deeper into a computer system through three worlds: Desktop, Kernel, and Hardware. The Maker supports the escape from outside the game world by placing, rotating, and deleting platforms through a mouse-and-keyboard mod interface. The Anticheat system acts as the main threat, chasing the Mover and forcing both players to coordinate under pressure.</p>
             <div class="media-grid">
-              <article class="role-card"><div class="role-card__header"><span class="label-badge">Mover</span><span class="role-card__device">controller</span></div><ul class="clean-list"><li>Moves left and right</li><li>Jumps across platforms and hazards</li><li>Activates checkpoints</li><li>Navigates traversal and chase sequences</li><li>Responds to paths created by the Maker</li></ul></article>
-              <article class="role-card"><div class="role-card__header"><span class="label-badge label-badge--accent">Maker</span><span class="role-card__device">mouse &amp; keyboard</span></div><ul class="clean-list"><li>Places platforms, left click</li><li>Deletes platforms, right click</li><li>Clears placed mods, Q</li><li>Selects mods, W / E</li><li>Rotates platforms, scroll wheel</li></ul></article>
+              <div class="role-card"><div class="role-card__header"><span class="label-badge">Mover</span><span class="role-card__device">controller</span></div><ul class="clean-list"><li>Moves left and right</li><li>Jumps across platforms and hazards</li><li>Activates checkpoints</li><li>Navigates traversal and chase sequences</li><li>Responds to paths created by the Maker</li></ul></div>
+              <div class="role-card"><div class="role-card__header"><span class="label-badge label-badge--accent">Maker</span><span class="role-card__device">mouse &amp; keyboard</span></div><ul class="clean-list"><li>Places platforms, left click</li><li>Deletes platforms, right click</li><li>Clears placed mods, Q</li><li>Selects mods, W / E</li><li>Rotates platforms, scroll wheel</li></ul></div>
             </div>
             <div class="callout"><div class="callout__label">Core design challenge</div><p class="callout__text">The two roles needed to feel genuinely interdependent rather than unequal. If the Maker handled every urgent decision, the Mover could feel passive; if the Maker only helped occasionally, the role could feel secondary. The challenge was to make both players active, legible, and useful throughout.</p></div>
             <figure class="figure-card"><img src="images/control-scheme.png" width="906" height="510" alt="Control scheme diagram: the Mover uses a controller for move, jump, and respawn while the Maker uses mouse and keyboard; Q clears all mods, W and E select Mod 1 and Mod 2, left click places, right click deletes, and the scroll wheel rotates." loading="lazy"><figcaption>The Mover and Maker use different devices and responsibilities: one navigates the level in real time, while the other creates and modifies paths under pressure.</figcaption></figure>
@@ -191,7 +191,7 @@
       </section>
 
       <!-- Next project navigation -->
-      <section class="case-section section--dark">
+      <nav class="case-section section--dark" aria-label="Project navigation">
         <div class="container next-project next-project--split">
           <a class="next-project__all-link" href="work.html"><span aria-hidden="true">&larr;</span> View all work</a>
           <a class="next-project__link" href="stylist.html">
@@ -199,7 +199,7 @@
             <span class="next-project__title">STYLIST</span>
           </a>
         </div>
-      </section>
+      </nav>
     </main>
 
     <!-- Shared footer -->
