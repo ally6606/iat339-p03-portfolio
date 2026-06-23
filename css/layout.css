@@ -3,7 +3,7 @@
 /* Centred page container */
 
 .container {
-  width: min(100% - (var(--container-pad) * 2), var(--container-max));
+  width: min(calc(100% - (var(--container-pad) * 2)), var(--container-max));
   margin-inline: auto;
 }
 
@@ -13,8 +13,7 @@
 
 /* Section spacing and background modifiers */
 
-/* Fluid sizing with clamp():
-   https://css-tricks.com/almanac/functions/c/clamp/ */
+/* https://css-tricks.com/almanac/functions/c/clamp/ */
 
 /* https://moderncsstools.com/guides/fluid-typography/ */
 .section {
