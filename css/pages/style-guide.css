@@ -1,0 +1,258 @@
+/* Style guide page */
+.style-hero {
+  padding-block: clamp(2.5rem, 6vw, 5.5rem) clamp(1.5rem, 3vw, 2rem);
+}
+
+.style-components {
+  padding-top: clamp(1.25rem, 3vw, 2rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+/* Colour swatches */
+
+.style-swatch {
+  display: flex;
+  min-height: 11rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  background: var(--color-paper);
+  border-top: 3rem solid currentColor;
+  padding: clamp(1.25rem, 2.4vw, 2rem);
+}
+
+.style-swatch--paper {
+  color: var(--color-paper);
+}
+
+.style-swatch--ink {
+  color: var(--color-ink);
+}
+
+.style-swatch--accent {
+  border-top-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.style-swatch--line {
+  color: var(--color-line);
+}
+
+.style-swatch--muted {
+  color: var(--color-muted);
+}
+
+.style-swatch--soft {
+  color: var(--color-soft);
+}
+
+.style-swatch strong,
+.style-swatch span {
+  color: var(--color-ink);
+}
+
+.style-swatch__token {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.style-swatch-list {
+  display: grid;
+  gap: 1px;
+  border: var(--border-thin);
+  background: var(--color-line);
+}
+
+.style-swatch-list .style-swatch {
+  min-height: 8rem;
+  border-top-width: 2rem;
+}
+
+/* Typography specimen stack */
+
+.style-type-stack {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.style-type-stack article + article {
+  border-top: var(--border-thin);
+  padding-top: var(--space-5);
+}
+
+.style-type-stack .home-hero__statement {
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1.4375rem, 2.7vw, 2.25rem);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.32;
+}
+
+.style-type-stack .home-section-heading {
+  margin-top: 0.875rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.style-type-stack .case-copy,
+.style-doc-grid .case-copy {
+  max-width: 62ch;
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.style-heading-demo {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.style-heading-demo .page-title,
+.style-heading-demo h2,
+.style-heading-demo h3 {
+  margin: 0;
+}
+
+.style-heading-demo .page-title {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+.style-heading-demo h2 {
+  font-size: clamp(1.875rem, 4vw, 3rem);
+}
+
+.style-heading-demo h3 {
+  font-size: clamp(1.5rem, 3vw, 2.125rem);
+}
+
+/* Component documentation grid */
+.style-component {
+  border-top: var(--border-thin);
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.style-component:last-child {
+  border-bottom: var(--border-thin);
+}
+
+.style-component__title {
+  margin-bottom: var(--space-6);
+  font-size: clamp(1.5rem, 3vw, 2.125rem);
+  line-height: 1.15;
+}
+
+.style-doc-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr) minmax(0, 1.2fr);
+  gap: 1px;
+  border: var(--border-thin);
+  background: var(--color-line);
+}
+
+.style-doc-grid section {
+  min-width: 0;
+  background: var(--color-paper);
+  padding: clamp(1.25rem, 2.4vw, 1.75rem);
+}
+
+.style-doc-grid h4 {
+  margin-bottom: var(--space-4);
+  color: var(--color-soft);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.style-doc-grid code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.style-doc-grid pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.style-doc-grid pre code {
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.style-nav-demo {
+  gap: var(--space-5);
+}
+
+.style-toggle-demo {
+  display: inline-block;
+}
+
+.style-marquee-demo {
+  margin-top: 0;
+}
+
+.style-marquee-demo .marquee__track {
+  animation-duration: calc(var(--duration-marquee) * 1.5);
+}
+
+.style-marquee-demo .marquee__set {
+  min-width: 34rem;
+  gap: var(--space-5);
+  justify-content: flex-start;
+  padding-right: var(--space-5);
+}
+
+.style-card-demo {
+  grid-template-columns: 1fr;
+}
+
+.style-card-demo .project-card__media,
+.style-card-demo .project-card__body {
+  grid-column: auto;
+  min-width: 0;
+}
+
+.style-footer-demo {
+  overflow: hidden;
+  border-radius: var(--radius-media);
+}
+
+.style-footer-demo .site-footer__grid {
+  width: auto;
+  grid-template-columns: 1fr;
+  padding: var(--space-7);
+}
+
+.style-footer-demo .site-footer__intro,
+.style-footer-demo .site-footer__column,
+.style-footer-demo .site-footer__column--wide {
+  grid-column: auto;
+  min-width: 0;
+}
+
+.style-footer-demo .site-footer__bottom {
+  width: auto;
+  padding: 0 var(--space-7) var(--space-7);
+}
+
+.style-next-project-demo {
+  padding: var(--space-7);
+}
+
+.style-next-project-demo .next-project {
+  width: auto;
+}
+
+.style-focus-demo {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  box-shadow: var(--focus-ring);
+}

@@ -9,6 +9,7 @@
     return;
   }
 
+  // https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded
   // Syncs aria-expanded, .is-open on the nav, and nav-open on body
   function setMenu(open) {
     navToggle.setAttribute("aria-expanded", String(open));

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/templates.css">
+  <link rel="stylesheet" href="css/pages/style-guide.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -46,7 +46,7 @@
     <main class="main-content" id="main-content">
       <!-- Style guide hero -->
       <section class="style-hero container" aria-labelledby="style-guide-title">
-        <h1 class="work-hero__title" id="style-guide-title">Style Guide</h1>
+        <h1 class="page-title page-title--work" id="style-guide-title">Style Guide</h1>
       </section>
 
       <!-- Component documentation -->
@@ -80,8 +80,8 @@
         <article class="style-component" id="component-typography">
           <h2 class="style-component__title" id="typography-title">Typography</h2>
         <div class="style-doc-grid">
-          <section><h4>CSS Selector</h4><code>.work-hero__title<br>.home-hero__statement<br>.case-copy<br>.eyebrow<br>.section-kicker<br>.project-card__meta</code></section>
-          <section><h4>Sample Code</h4><pre><code>&lt;h1 class="work-hero__title"&gt;Selected Work&lt;/h1&gt;
+          <section><h4>CSS Selector</h4><code>.page-title.page-title--work<br>.home-hero__statement<br>.case-copy<br>.eyebrow<br>.section-kicker<br>.project-card__meta</code></section>
+          <section><h4>Sample Code</h4><pre><code>&lt;h1 class="page-title page-title--work"&gt;Selected Work&lt;/h1&gt;
 &lt;p class="home-hero__statement"&gt;Thoughtful, playful, and clear interactive experiences.&lt;/p&gt;
 &lt;p class="case-copy"&gt;Body text uses Archivo with generous line height.&lt;/p&gt;
 &lt;span class="eyebrow"&gt;Metadata / Space Mono&lt;/span&gt;</code></pre></section>
@@ -100,11 +100,11 @@
         <article class="style-component" id="component-headings">
           <h2 class="style-component__title">Headings</h2>
           <div class="style-doc-grid">
-            <section><h4>CSS Selector</h4><code>.work-hero__title<br>.case-heading<br>.home-section-heading</code></section>
-            <section><h4>Sample Code</h4><pre><code>&lt;h1 class="work-hero__title"&gt;Selected Work&lt;/h1&gt;
+            <section><h4>CSS Selector</h4><code>.page-title.page-title--work<br>.section-heading<br>.home-section-heading</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;h1 class="page-title page-title--work"&gt;Selected Work&lt;/h1&gt;
 &lt;h2 class="home-section-heading"&gt;Selected projects&lt;/h2&gt;
 &lt;h3 class="project-card__title"&gt;STYLIST&lt;/h3&gt;</code></pre></section>
-            <section><h4>Rendered Element</h4><div class="style-heading-demo"><h1>Selected Work</h1><h2>Selected projects</h2><h3>STYLIST</h3></div></section>
+            <section><h4>Rendered Element</h4><div class="style-heading-demo"><div class="page-title page-title--work" aria-hidden="true">Selected Work</div><h2>Selected projects</h2><h3>STYLIST</h3></div></section>
           </div>
         </article>
 
@@ -259,14 +259,14 @@
         <article class="style-component" id="component-transcript">
           <h2 class="style-component__title">Video Description and Transcript</h2>
           <div class="style-doc-grid">
-            <section><h4>CSS Selector</h4><code>.transcript-debt, .transcript-list, .transcript-list time</code></section>
-            <section><h4>Sample Code</h4><pre><code>&lt;details class="transcript-debt"&gt;
+            <section><h4>CSS Selector</h4><code>.video-transcript, .transcript-list, .transcript-list time</code></section>
+            <section><h4>Sample Code</h4><pre><code>&lt;details class="video-transcript"&gt;
   &lt;summary&gt;Video description and transcript&lt;/summary&gt;
   &lt;ol class="transcript-list"&gt;
     &lt;li&gt;&lt;time datetime="PT0S"&gt;00:00:00&lt;/time&gt;&lt;p&gt;Hey, you.&lt;/p&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/details&gt;</code></pre></section>
-            <section><h4>Rendered Element</h4><details class="transcript-debt"><summary>Video description and transcript</summary><ol class="transcript-list"><li><time datetime="PT0S">00:00:00</time><p>Hey, you.</p></li></ol></details></section>
+            <section><h4>Rendered Element</h4><details class="video-transcript"><summary>Video description and transcript</summary><ol class="transcript-list"><li><time datetime="PT0S">00:00:00</time><p>Hey, you.</p></li></ol></details></section>
           </div>
         </article>
 

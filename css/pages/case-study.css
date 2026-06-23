@@ -1,0 +1,39 @@
+/* Case study pages */
+.case-hero {
+  padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(2.5rem, 5vw, 4rem);
+}
+
+.case-hero__eyebrow {
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-hero__body {
+  max-width: 62ch;
+  margin-top: 1.125rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.case-reflection {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.case-copy {
+  max-width: 62ch;
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.section--dark .case-copy {
+  color: rgba(250, 247, 241, 0.72);
+}

@@ -12,7 +12,8 @@
     transform: translateY(-7px);
   }
 }
-
+/* https://codepen.io/bitgrip-thomas/pen/mdZbgXN */
+/* The track moves by half its width because the markup contains two identical ticker sets. */
 @keyframes ac-marquee {
   0% {
     transform: translateX(0);
@@ -289,7 +290,8 @@ a:focus-visible .media-frame {
   align-items: center;
   gap: clamp(1.25rem, 4vw, 3rem);
 }
-
+/* https://www.w3schools.com/Css/css_combinators.asp */
+/* Separates later cards without requiring an extra modifier class in HTML. */
 .project-card + .project-card {
   border-top: var(--border-thin);
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
@@ -388,6 +390,67 @@ a:focus-visible .media-frame {
   color: var(--color-ink);
 }
 
+.tag-group {
+  margin-top: 2.375rem;
+}
+
+.tag-group__label {
+  margin-bottom: var(--space-4);
+  color: var(--color-soft);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.page-title {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+}
+
+.page-title--work {
+  font-size: clamp(2.875rem, 9vw, 7.375rem);
+}
+
+.page-title--hero {
+  font-size: clamp(3.375rem, 12vw, 10rem);
+}
+
+.page-title--long {
+  font-size: clamp(2.625rem, 9.5vw, 8.25rem);
+}
+
+.page-lead {
+  margin-top: 1.75rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.36;
+}
+
+.page-lead--work {
+  max-width: 30ch;
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+}
+
+.page-lead--hero {
+  max-width: 42ch;
+  font-size: clamp(1.3125rem, 2.6vw, 2.125rem);
+}
+
+.section-heading {
+  font-size: clamp(1.625rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.section-heading--large {
+  font-size: clamp(1.75rem, 3.6vw, 2.875rem);
+}
+
 .breadcrumb {
   padding-top: clamp(1.5rem, 3vw, 2.5rem);
   color: var(--color-soft);
@@ -407,9 +470,7 @@ a:focus-visible .media-frame {
 
 /* Case study project meta grid and video preview card */
 
-/* Grid-divider technique using gap and background colour:
-   https://bengammon.co.uk/colouring-css-grid-lines/ */
-
+/*https://bengammon.co.uk/colouring-css-grid-lines/ */
 .meta-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
@@ -513,7 +574,6 @@ a:focus-visible .media-frame {
 }
 
 /* Figures, captions, and phone mockup sizing */
-
 .caption,
 .figure-card figcaption,
 .video-card figcaption {

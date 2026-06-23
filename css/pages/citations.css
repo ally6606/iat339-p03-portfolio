@@ -1,0 +1,65 @@
+/* Citations page */
+.citation-hero {
+  padding-block: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+.citation-section {
+  border-top: var(--border-thin);
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.citation-section__header {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.28fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(1.75rem, 4vw, 3rem);
+}
+
+/* https://www.w3schools.com/CSS/css_counters.asp */
+.citation-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  border: var(--border-thin);
+  background: var(--color-line);
+  counter-reset: citation;
+  list-style: none;
+  padding: 0;
+}
+
+.citation-item {
+  position: relative;
+  min-width: 0;
+  background: var(--color-paper);
+  padding: clamp(1.375rem, 2.8vw, 2rem);
+  counter-increment: citation;
+}
+
+.citation-item::before {
+  display: block;
+  margin-bottom: var(--space-4);
+  color: var(--color-ink);
+  content: counter(citation, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.citation-item h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+  line-height: 1.12;
+}
+
+.citation-item p {
+  margin-top: var(--space-3);
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.citation-item strong {
+  color: var(--color-ink);
+}
+
+.citation-item .text-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}

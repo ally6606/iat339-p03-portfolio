@@ -16,6 +16,7 @@
 /* Fluid sizing with clamp():
    https://css-tricks.com/almanac/functions/c/clamp/ */
 
+/* https://moderncsstools.com/guides/fluid-typography/ */
 .section {
   padding-block: clamp(3.5rem, 8vw, 6.875rem) clamp(1.875rem, 4vw, 3.75rem);
 }
@@ -71,6 +72,7 @@
   min-width: 17.5rem;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/minmax */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

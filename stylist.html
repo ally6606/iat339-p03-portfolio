@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/templates.css">
+  <link rel="stylesheet" href="css/pages/case-study.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -47,8 +47,8 @@
       <!-- Case study hero: project meta, video preview, and transcript -->
       <section class="case-hero container" aria-labelledby="stylist-title">
         <span class="case-hero__eyebrow">Mobile UX Design &middot; React Native</span>
-        <h1 class="case-hero__title" id="stylist-title">STYLIST</h1>
-        <p class="case-hero__lead">A mobile outfit-planning app that helps users make daily clothing decisions using wardrobe data, weather conditions, formality preferences, and personal style tags.</p>
+        <h1 class="page-title page-title--hero" id="stylist-title">STYLIST</h1>
+        <p class="page-lead page-lead--hero">A mobile outfit-planning app that helps users make daily clothing decisions using wardrobe data, weather conditions, formality preferences, and personal style tags.</p>
 
         <dl class="meta-grid spaced-block">
           <div class="meta-grid__item"><dt class="meta-grid__label">Role</dt><dd class="meta-grid__value">UI/UX &middot; Frontend &middot; Interface Refinement</dd></div>
@@ -64,6 +64,7 @@
           </a>
           <figcaption>A short walkthrough of STYLIST's wardrobe, preferences, and outfit-generation flow.</figcaption>
         </figure>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details -->
         <details class="video-transcript">
           <summary>Video description and transcript</summary>
           <ol class="transcript-list">
@@ -134,7 +135,7 @@
         <div class="container case-section__grid">
           <aside class="case-section__aside"><span class="eyebrow">01 - Context</span></aside>
           <div class="case-section__content">
-            <h2 class="case-heading" id="stylist-context">What STYLIST is</h2>
+            <h2 class="section-heading" id="stylist-context">What STYLIST is</h2>
             <p class="case-copy">A clothing-management and outfit-recommendation app where users can add clothing items, organize a digital wardrobe, view weather information, and generate outfit suggestions.</p>
             <p class="case-copy">STYLIST was designed to reduce the everyday mental effort of choosing an outfit. Choosing what to wear can require users to consider weather, formality, available clothing, and personal style all at once. The app combines wardrobe management, local weather information, formality preferences, and personal tags to help users make a more confident decision.</p>
             <p class="case-copy">STYLIST was built as a team project for IAT 359: Mobile Computing.</p>
@@ -150,7 +151,7 @@
         <div class="container case-section__grid">
           <aside class="case-section__aside"><span class="eyebrow">02 - The Challenge</span></aside>
           <div class="case-section__content">
-            <h2 class="case-heading case-heading--large" id="stylist-challenge">How might I organize several required clothing inputs so users can add an item confidently, without feeling overwhelmed?</h2>
+            <h2 class="section-heading section-heading--large" id="stylist-challenge">How might I organize several required clothing inputs so users can add an item confidently, without feeling overwhelmed?</h2>
             <p class="case-copy">The Add Item flow required users to enter several types of information at once. In the earlier interface these controls appeared together with limited hierarchy: the screen was functional, but visually dense and difficult to scan.</p>
             <div class="tag-list spaced-block" aria-label="Add Item information types">
               <span class="tag">A clothing photo</span>
@@ -173,7 +174,7 @@
           <div class="case-section__grid">
             <aside class="case-section__aside"><span class="eyebrow">03 - Process &amp; Iteration</span></aside>
             <div class="case-section__content">
-              <h2 class="case-heading" id="stylist-process">Reframing the Add Item flow</h2>
+              <h2 class="section-heading" id="stylist-process">Reframing the Add Item flow</h2>
               <p class="case-copy">The early approach showed all essential inputs on one long screen so users could finish without navigating multiple pages. But putting everything together made the experience feel crowded, with little guidance about where to begin or how photo selection, item details, attributes, and tags related to one another.</p>
             </div>
           </div>
@@ -211,7 +212,7 @@
           <div class="case-section__grid">
             <aside class="case-section__aside"><span class="eyebrow">04 - Extending the Visual System</span></aside>
             <div class="case-section__content">
-              <h2 class="case-heading" id="stylist-settings">Carrying the system into Settings</h2>
+              <h2 class="section-heading" id="stylist-settings">Carrying the system into Settings</h2>
               <p class="case-copy">The goal was to apply the same principles of grouping, hierarchy, and consistency beyond Add Item. The earlier Settings screen placed display name, location, toggles, theme selection, save and reset controls, and logout in one long continuous form. Each control worked, but the page didn't clearly distinguish account information, preferences, appearance, and actions.</p>
             </div>
           </div>
@@ -245,7 +246,7 @@
         <div class="container case-section__grid">
           <aside class="case-section__aside"><span class="eyebrow">05 - Implementation &amp; System Support</span></aside>
           <div class="case-section__content">
-            <h2 class="case-heading" id="stylist-implementation">Making the interface feel dependable</h2>
+            <h2 class="section-heading" id="stylist-implementation">Making the interface feel dependable</h2>
             <p class="case-copy">Alongside the visual refinement, I implemented settings-related interactions in React Native, including persistent preferences such as temperature units, location inputs, and display settings. This helped the interface feel dependable across sessions while supporting a consistent experience across the app.</p>
             <div class="support-grid">
               <article class="support-card">
@@ -270,7 +271,7 @@
           <div class="case-section__grid">
             <aside class="case-section__aside"><span class="eyebrow">06 - Final Outcome</span></aside>
             <div class="case-section__content">
-              <h2 class="case-heading" id="stylist-outcome">Easier to scan, calmer to navigate, more coherent</h2>
+              <h2 class="section-heading" id="stylist-outcome">Easier to scan, calmer to navigate, more coherent</h2>
               <p class="case-copy">The final design made the app easier to scan and more visually coherent across major screens. Add Item became easier to begin and complete; Settings became easier to scan and understand. Repeated cards, labels, controls, spacing, and navigation patterns made the app feel like one product, better connecting wardrobe management, weather-aware recommendations, and user preferences.</p>
             </div>
           </div>
