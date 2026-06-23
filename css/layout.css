@@ -3,7 +3,8 @@
 /* Centred page container */
 
 .container {
-  width: min(calc(100% - (var(--container-pad) * 2)), var(--container-max));
+  width: calc(100% - var(--container-pad) - var(--container-pad));
+  max-width: var(--container-max);
   margin-inline: auto;
 }
 
